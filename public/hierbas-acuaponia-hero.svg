@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#f4f1e8"/>
+  <rect x="80" y="80" width="1240" height="600" rx="36" fill="#ffffff" stroke="#d9d3c3" stroke-width="4"/>
+  <text x="130" y="150" font-family="Arial, sans-serif" font-size="56" font-weight="700" fill="#1f2a1f">Hierbas aromáticas en acuaponía</text>
+  <text x="130" y="200" font-family="Arial, sans-serif" font-size="26" fill="#4b5a4b">agua recirculando + peces + bacterias + raíces oxigenadas</text>
+  <ellipse cx="420" cy="520" rx="280" ry="58" fill="#7aa6c2" opacity="0.35"/>
+  <rect x="220" y="350" width="400" height="170" rx="28" fill="#5e8fb0"/>
+  <rect x="240" y="370" width="360" height="130" rx="18" fill="#8fc0dc"/>
+  <circle cx="350" cy="430" r="28" fill="#466b7f"/>
+  <circle cx="445" cy="450" r="22" fill="#466b7f"/>
+  <path d="M332 430 Q350 405 375 430 Q350 455 332 430Z" fill="#d8edf7"/>
+  <path d="M428 450 Q445 430 465 450 Q445 470 428 450Z" fill="#d8edf7"/>
+  <rect x="710" y="350" width="440" height="150" rx="24" fill="#9a6f3a"/>
+  <rect x="730" y="370" width="400" height="110" rx="16" fill="#6b4f2b"/>
+  <g stroke="#234223" stroke-width="9" stroke-linecap="round">
+    <line x1="790" y1="370" x2="760" y2="250"/>
+    <line x1="850" y1="370" x2="850" y2="230"/>
+    <line x1="925" y1="370" x2="960" y2="235"/>
+    <line x1="1010" y1="370" x2="1060" y2="250"/>
+  </g>
+  <g fill="#2f7d32">
+    <ellipse cx="750" cy="250" rx="42" ry="22" transform="rotate(-25 750 250)"/>
+    <ellipse cx="790" cy="278" rx="42" ry="22" transform="rotate(25 790 278)"/>
+    <ellipse cx="840" cy="230" rx="46" ry="24" transform="rotate(-10 840 230)"/>
+    <ellipse cx="880" cy="260" rx="42" ry="22" transform="rotate(30 880 260)"/>
+    <ellipse cx="950" cy="238" rx="44" ry="22" transform="rotate(-25 950 238)"/>
+    <ellipse cx="985" cy="270" rx="42" ry="22" transform="rotate(25 985 270)"/>
+    <ellipse cx="1060" cy="250" rx="48" ry="24" transform="rotate(-20 1060 250)"/>
+    <ellipse cx="1095" cy="285" rx="42" ry="20" transform="rotate(30 1095 285)"/>
+  </g>
+  <path d="M620 420 C680 420 650 420 710 420" stroke="#2f7d32" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M710 420 l-32 -22 l0 44 Z" fill="#2f7d32"/>
+  <path d="M710 520 C650 610 470 630 360 555" stroke="#2f7d32" stroke-width="14" fill="none" stroke-linecap="round"/>
+  <path d="M360 555 l42 -5 l-20 36 Z" fill="#2f7d32"/>
+  <text x="130" y="640" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#006b35">KC GREENWORKS</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <rect width="1400" height="760" fill="#f4f1e8"/>
+  <rect x="90" y="90" width="1220" height="580" rx="34" fill="#ffffff" stroke="#d9d3c3" stroke-width="4"/>
+  <text x="140" y="160" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#1f2a1f">De la acuaponía a la cocina</text>
+  <text x="140" y="205" font-family="Arial, sans-serif" font-size="25" fill="#4b5a4b">corta, condimenta y vuelve a cosechar</text>
+  <rect x="150" y="470" width="1100" height="80" rx="22" fill="#d6c6aa"/>
+  <g transform="translate(220,285)">
+    <rect x="0" y="130" width="180" height="130" rx="20" fill="#7a5433"/>
+    <ellipse cx="90" cy="130" rx="90" ry="30" fill="#9a6f3a"/>
+    <g stroke="#2e5f2e" stroke-width="8" stroke-linecap="round">
+      <line x1="90" y1="130" x2="70" y2="25"/>
+      <line x1="95" y1="130" x2="130" y2="30"/>
+    </g>
+    <g fill="#3f8f3f">
+      <ellipse cx="62" cy="45" rx="35" ry="18" transform="rotate(-25 62 45)"/>
+      <ellipse cx="98" cy="72" rx="35" ry="18" transform="rotate(25 98 72)"/>
+      <ellipse cx="128" cy="45" rx="36" ry="18" transform="rotate(-20 128 45)"/>
+    </g>
+    <text x="42" y="300" font-family="Arial" font-size="26" font-weight="700" fill="#1f2a1f">Albahaca</text>
+  </g>
+  <g transform="translate(470,285)">
+    <rect x="0" y="130" width="180" height="130" rx="20" fill="#7a5433"/>
+    <ellipse cx="90" cy="130" rx="90" ry="30" fill="#9a6f3a"/>
+    <g stroke="#2e5f2e" stroke-width="7" stroke-linecap="round">
+      <line x1="90" y1="130" x2="55" y2="35"/>
+      <line x1="92" y1="130" x2="110" y2="25"/>
+      <line x1="95" y1="130" x2="140" y2="50"/>
+    </g>
+    <g fill="#4d9b4d">
+      <circle cx="55" cy="40" r="18"/><circle cx="80" cy="68" r="16"/><circle cx="110" cy="32" r="18"/><circle cx="138" cy="55" r="16"/>
+    </g>
+    <text x="54" y="300" font-family="Arial" font-size="26" font-weight="700" fill="#1f2a1f">Menta</text>
+  </g>
+  <g transform="translate(720,285)">
+    <rect x="0" y="130" width="180" height="130" rx="20" fill="#7a5433"/>
+    <ellipse cx="90" cy="130" rx="90" ry="30" fill="#9a6f3a"/>
+    <g stroke="#2e5f2e" stroke-width="6" stroke-linecap="round">
+      <line x1="90" y1="130" x2="85" y2="25"/>
+      <line x1="90" y1="130" x2="55" y2="55"/>
+      <line x1="90" y1="130" x2="130" y2="55"/>
+    </g>
+    <g fill="#57a857">
+      <path d="M85 30 C60 45 70 65 90 60 C112 55 112 35 85 30Z"/>
+      <path d="M55 58 C35 72 45 90 64 83 C82 76 80 58 55 58Z"/>
+      <path d="M130 58 C110 72 120 90 139 83 C157 76 155 58 130 58Z"/>
+    </g>
+    <text x="54" y="300" font-family="Arial" font-size="26" font-weight="700" fill="#1f2a1f">Perejil</text>
+  </g>
+  <g transform="translate(970,285)">
+    <rect x="0" y="130" width="180" height="130" rx="20" fill="#7a5433"/>
+    <ellipse cx="90" cy="130" rx="90" ry="30" fill="#9a6f3a"/>
+    <g stroke="#2e5f2e" stroke-width="7" stroke-linecap="round">
+      <line x1="90" y1="130" x2="75" y2="35"/>
+      <line x1="90" y1="130" x2="120" y2="45"/>
+    </g>
+    <g fill="#3f8f3f">
+      <ellipse cx="73" cy="45" rx="22" ry="10" transform="rotate(-30 73 45)"/>
+      <ellipse cx="98" cy="70" rx="22" ry="10" transform="rotate(25 98 70)"/>
+      <ellipse cx="120" cy="50" rx="22" ry="10" transform="rotate(-20 120 50)"/>
+    </g>
+    <text x="48" y="300" font-family="Arial" font-size="26" font-weight="700" fill="#1f2a1f">Orégano</text>
+  </g>
+</svg>
