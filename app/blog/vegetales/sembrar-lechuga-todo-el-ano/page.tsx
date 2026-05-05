@@ -38,7 +38,7 @@ export default function SembrarLechugaTodoElAnoPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/lechuga-todo-el-ano-hero.png"
+            src="/tomates1.JPEG"
             alt="Lechugas verdes creciendo en un huerto casero con buena luz"
             width={1200}
             height={800}
@@ -163,7 +163,7 @@ export default function SembrarLechugaTodoElAnoPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/lechuga-sombra-calor.png"
+            src="/tomates2.JPEG"
             alt="Lechugas creciendo bajo sombra parcial para protegerlas del calor"
             width={1200}
             height={800}
@@ -275,7 +275,7 @@ export default function SembrarLechugaTodoElAnoPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/lechuga-siembra-semillas.png"
+            src="/tomates3.JPEG"
             alt="Manos sembrando semillas de lechuga en una bandeja con sustrato"
             width={1200}
             height={800}
@@ -456,7 +456,7 @@ export default function SembrarLechugaTodoElAnoPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/lechuga-cosecha-hojas.png"
+            src="/tomates4.JPEG"
             alt="Persona cosechando hojas externas de lechuga en un huerto casero"
             width={1200}
             height={800}

@@ -39,7 +39,7 @@ export default function Page() {
 
         <figure className="mx-auto max-w-2xl">
           <Image
-            src="/images/blog/vermicompostera/vermicompostera-caja.png"
+            src="/lombricultura1es.png"
             alt="Vermicompostera casera en caja plástica"
             width={900}
             height={600}
@@ -152,7 +152,7 @@ export default function Page() {
 
           <figure className="mx-auto max-w-xl">
             <Image
-              src="/images/blog/vermicompostera/lombrices-rojas.png"
+              src="/lombricultura2es.png"
               alt="Lombrices rojas californianas para vermicompostaje"
               width={800}
               height={550}
@@ -262,7 +262,7 @@ export default function Page() {
 
         <figure className="mx-auto max-w-xl">
           <Image
-            src="/images/blog/vermicompostera/humus-lombriz.png"
+            src="/lombricultura1es.png"
             alt="Humus de lombriz listo para usar"
             width={800}
             height={550}

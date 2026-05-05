@@ -28,7 +28,7 @@ export default function Vegetales() {
             </div>
           </Link>
 
-          <Link href="/blog/vegetales/zucchini">
+          <Link href="/blog/vegetales/zucchini-guia-completa">
             <div className="cursor-pointer rounded-xl border border-[#1f2a1f] p-4 transition hover:shadow-md">
               <h2 className="text-xl font-semibold">Zucchini (calabacín)</h2>
               <p className="text-gray-600">
