@@ -39,7 +39,7 @@ export default function LixiviadoLombrizPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/lombricultura1es.png"
+            src="/images/lixiviado-lombriz-hero.png"
             alt="Lixiviado de lombriz oscuro en un recipiente junto a plantas verdes"
             width={1200}
             height={800}
@@ -107,7 +107,7 @@ export default function LixiviadoLombrizPage() {
 
           <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
             <Image
-              src="/lombricultura2es.png"
+              src="/images/lixiviado-lombriz-proceso.png"
               alt="Proceso de producción de lixiviado de lombriz en una vermicompostera"
               width={1200}
               height={800}
@@ -190,7 +190,7 @@ export default function LixiviadoLombrizPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/lombricultura1es.png"
+            src="/images/lombrices-humus.png"
             alt="Lombrices rojas trabajando en humus de lombriz"
             width={1200}
             height={800}
@@ -282,7 +282,7 @@ export default function LixiviadoLombrizPage() {
 
           <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
             <Image
-              src="/lombricultura2es.png"
+              src="/images/lixiviado-aplicacion.png"
               alt="Aplicación de lixiviado de lombriz diluido en plantas"
               width={1200}
               height={800}

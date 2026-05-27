@@ -46,7 +46,7 @@ export default function Page() {
 
         <figure className="mx-auto max-w-2xl">
           <Image
-  src="/acuaponia1es.png"
+  src="/images/blog/acuaponia/como-construir-acuaponico/sistema-acuaponico-casero.png"
   alt="Sistema acuapónico casero barato con tanque de peces y cama de cultivo"
   width={900}
   height={600}
@@ -153,7 +153,7 @@ export default function Page() {
 
         <figure className="mx-auto max-w-xl">
           <Image
-  src="/acuaponia2es.png"
+  src="/images/blog/acuaponia/como-construir-acuaponico/tanque-peces-acuaponia.png"
   alt="Tanque de peces para sistema acuapónico casero"
   width={800}
   height={550}
@@ -252,7 +252,7 @@ export default function Page() {
 
           <figure className="mx-auto max-w-xl">
             <Image
-  src="/acuaponia1es.png"
+  src="/images/blog/acuaponia/como-construir-acuaponico/cama-cultivo-acuaponica.png"
   alt="Cama de cultivo acuapónica con plantas creciendo"
   width={800}
   height={550}

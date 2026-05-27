@@ -11,9 +11,9 @@ export default function Page() {
 
       {/* HERO IMAGE */}
       <div className="flex justify-center gap-4 mb-6">
-  <img src="/tomates1.JPEG" className="w-[200px] rounded-xl" />
-  <img src="/tomates2.JPEG" className="w-[200px] rounded-xl" />
-<img src="/tomates3.JPEG" className="w-[200px] rounded-xl" />
+  <img src="/tomates1.jpeg" className="w-[200px] rounded-xl" />
+  <img src="/tomates2.jpeg" className="w-[200px] rounded-xl" />
+<img src="/tomates3.jpeg" className="w-[200px] rounded-xl" />
 </div>
 
       {/* TITULO */}

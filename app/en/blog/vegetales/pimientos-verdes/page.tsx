@@ -1,25 +1,53 @@
-import Link from "next/link";
+import EnglishArticle from "@/components/EnglishArticle";
 
-export default function ArticlePage() {
+export const metadata = {
+  title: 'Green peppers: home growing guide',
+  description: 'Complete English guide for growing green peppers at home.',
+};
+
+export default function GreenPeppersPage() {
   return (
-    <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">
-      <article className="mx-auto max-w-4xl space-y-8">
-        <Link href="/en/blog/vegetales" className="text-sm font-semibold text-green-800 hover:underline">← Back to Vegetables</Link>
-        <header className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-green-800">KCGreenWorks Guide</p>
-          <h1 className="text-4xl font-bold leading-tight md:text-5xl">Green Peppers: Complete Home Growing Guide</h1>
-          <p className="text-lg text-[#4b5a4b]">A clear beginner-friendly guide with the practical points you need before starting.</p>
-        </header>
-        <img src="/zucchini1.png" alt="Green Peppers: Complete Home Growing Guide" className="w-full rounded-3xl border border-[#dcd6c8] bg-white object-cover shadow-sm" />
-        <section className="space-y-5 rounded-3xl bg-white p-7 shadow-sm">
-          <h2 className="text-3xl font-bold">What you need to know</h2>
-          <p className="text-lg leading-8 text-[#4b5a4b]">Green peppers need warmth, sun and patience. The plant grows slower than zucchini or lettuce, but it can produce well in containers.</p><p className="text-lg leading-8 text-[#4b5a4b]">Keep moisture consistent and avoid heavy nitrogen once the plant is flowering. Too much nitrogen can produce leaves instead of peppers.</p><p className="text-lg leading-8 text-[#4b5a4b]">Harvest green peppers when they are firm and full sized. Leaving them longer can allow color change depending on variety.</p>
-        </section>
-        <section className="space-y-4 rounded-3xl border border-[#dcd6c8] bg-[#fffaf0] p-7">
-          <h2 className="text-3xl font-bold">Practical recommendation</h2>
-          <p className="text-lg leading-8 text-[#4b5a4b]">Start small, observe the system every day, and adjust one variable at a time. Consistency beats complicated setups.</p>
-        </section>
-      </article>
-    </main>
+    <EnglishArticle
+      backHref='/en/blog/vegetales'
+      backLabel='Back to Vegetables'
+      eyebrow='Home growing guide'
+      title='Green peppers: how to grow them at home'
+      intro='Green peppers are productive, useful in the kitchen and well suited for containers, raised beds and small gardens. They need warmth, steady moisture and patience during the early stages.'
+      image='/images/blog/pimientos-verdes/pimiento-verde-planta.png'
+      imageAlt='Green pepper plant'
+      sections={[
+    {
+      title: 'Climate and light',
+      body: [
+        'Peppers are warm-season plants. They grow slowly when temperatures are low and perform best with strong light and warm roots.',
+      ],
+      bullets: [
+        'Full sun',
+        'Warm soil',
+        'Protection from cold wind',
+        'Good drainage',
+      ],
+    },
+    {
+      title: 'Soil and containers',
+      body: [
+        'Use loose soil with organic matter. Containers should drain well and be large enough for roots to expand. A cramped plant produces less.',
+      ],
+    },
+    {
+      title: 'Flowering and fruiting',
+      body: [
+        'Pepper flowers become fruit when the plant is healthy and not under extreme stress. Heat, drought or poor nutrition can cause blossom drop.',
+      ],
+    },
+    {
+      title: 'Harvesting',
+      body: [
+        'Green peppers are harvested before they fully ripen. You can leave some fruit longer to change color, but that slows new production.',
+      ],
+    },
+  ]}
+      recommendation='Do not overwater peppers. Keep the soil evenly moist, not soggy, and protect young plants from cold nights.'
+    />
   );
 }

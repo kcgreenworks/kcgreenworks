@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import SiteHeader from "@/components/SiteHeader";
 import "./globals.css";
+import SiteHeader from "@/components/SiteHeader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KCGreenWorks | Home Gardening, Aquaponics & Worm Composting",
-  description:
-    "Bilingual practical guides for home gardening, aquaponics, vegetables, worm composting and small-space food growing.",
+  title: "KCGreenWorks",
+  description: "Practical home gardening, aquaponics and worm composting guides.",
 };
 
 export default function RootLayout({
@@ -25,11 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full bg-[#f4f1e8]">
-        <SiteHeader />
-        {children}
-      </body>
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col"><SiteHeader />{children}</body>
     </html>
   );
 }

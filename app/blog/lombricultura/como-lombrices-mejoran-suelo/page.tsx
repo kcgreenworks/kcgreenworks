@@ -38,7 +38,7 @@ export default function ComoLombricesMejoranSueloPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/lombricultura1es.png"
+            src="/images/lombrices-mejoran-suelo-hero.png"
             alt="Lombrices trabajando en suelo oscuro y fértil con raíces de plantas"
             width={1200}
             height={800}
@@ -131,7 +131,7 @@ export default function ComoLombricesMejoranSueloPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/lombricultura2es.png"
+            src="/images/lombrices-proceso-suelo.png"
             alt="Diagrama del proceso de las lombrices transformando materia orgánica en humus"
             width={1200}
             height={800}
@@ -251,7 +251,7 @@ export default function ComoLombricesMejoranSueloPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/lombricultura1es.png"
+            src="/images/humus-lombriz-suelo.png"
             alt="Humus de lombriz oscuro aplicado en una cama de cultivo"
             width={1200}
             height={800}

@@ -40,7 +40,7 @@ export default function PimientosVerdesPage() {
         </header>
 
         <Image
-          src="/zucchini1.png"
+          src="/images/blog/pimientos-verdes/pimiento-verde-planta.png"
           alt="Planta de pimiento verde creciendo en huerto casero"
           width={1200}
           height={800}
@@ -113,7 +113,7 @@ export default function PimientosVerdesPage() {
         </section>
 
         <Image
-          src="/zucchini2.png"
+          src="/images/blog/pimientos-verdes/pimiento-verde-flor.png"
           alt="Flor de pimiento"
           width={1200}
           height={800}
@@ -135,7 +135,7 @@ export default function PimientosVerdesPage() {
         </section>
 
         <Image
-          src="/zucchini3.png"
+          src="/images/blog/pimientos-verdes/pimiento-verde-cosecha.png"
           alt="Pimientos verdes listos"
           width={1200}
           height={800}

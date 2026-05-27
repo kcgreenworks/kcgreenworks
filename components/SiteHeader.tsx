@@ -65,20 +65,14 @@ export default function SiteHeader() {
         >
           <Link
             href={isEnglish ? "/en/blog" : "/blog"}
-            style={{
-              color: "#314232",
-              textDecoration: "none",
-            }}
+            style={{ color: "#314232", textDecoration: "none" }}
           >
             {isEnglish ? "Guides" : "Guías"}
           </Link>
 
           <Link
             href={isEnglish ? "/en/start-here" : "/start-here"}
-            style={{
-              color: "#314232",
-              textDecoration: "none",
-            }}
+            style={{ color: "#314232", textDecoration: "none" }}
           >
             {isEnglish ? "Start here" : "Empieza aquí"}
           </Link>
