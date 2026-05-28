@@ -17,15 +17,8 @@ export default function Home() {
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
-            href="/start-here"
-            className="rounded-xl bg-green-800 px-6 py-3 text-center font-semibold text-white"
-          >
-            Empezar ahora
-          </a>
-
-          <a
             href="/blog"
-            className="rounded-xl border border-green-800 px-6 py-3 text-center font-semibold text-green-900"
+            className="rounded-xl border border-green-800 px-6 py-3 text-center font-semibold text-green-900 transition hover:bg-green-800 hover:text-white"
           >
             Ver guías
           </a>

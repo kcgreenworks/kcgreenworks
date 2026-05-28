@@ -1,39 +1,28 @@
 export default function HomeEN() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f]">
-      <section className="mx-auto max-w-5xl px-6 py-16">
-        
-        <div className="mb-6 flex items-center justify-between">
-          <p className="text-sm font-semibold text-green-800">
-            KCGREENWORKS
-          </p>         
-        </div>
+      <section className="mx-auto max-w-5xl px-6 py-20">
+        <p className="mb-6 text-sm font-semibold uppercase tracking-wide text-green-800">
+          KCGREENWORKS
+        </p>
 
-        <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">
+        <h1 className="max-w-4xl text-5xl font-bold leading-tight md:text-7xl">
           Learn how to grow food at home, even with limited space.
         </h1>
 
-        <p className="mt-6 max-w-2xl text-lg text-[#4b5a4b]">
-          Practical guides for people who want to start with home gardens,
-          composting, worms, and simple home agriculture.
+        <p className="mt-8 max-w-3xl text-xl leading-9 text-[#4b5a4b]">
+          Practical step-by-step guides about home gardening, aquaponics,
+          composting, worm farming, and sustainable food production for beginners.
         </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-10">
           <a
-            className="rounded-xl bg-green-800 px-6 py-3 text-center font-semibold text-white"
-            href="/en/start-here"
-          >
-            Start now
-          </a>
-
-          <a
-            className="rounded-xl border border-green-800 px-6 py-3 text-center font-semibold text-green-900"
             href="/en/blog"
+            className="inline-flex rounded-2xl border border-green-800 px-8 py-4 text-lg font-semibold text-green-900 transition hover:bg-green-800 hover:text-white"
           >
-            View guides
+            View Guides
           </a>
         </div>
-
       </section>
     </main>
   );
