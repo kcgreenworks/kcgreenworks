@@ -1,0 +1,68 @@
+import Link from "next/link";
+import Image from "next/image";
+
+const books = [
+  {
+    title: "WORM FARMING AT HOME: HOW I BUILT MY OWN VERMICOMPOST SYSTEM FROM SCRATCH",
+    description:
+      "Learn step by step how to build and maintain a home worm farming system, produce high-quality worm castings, and transform organic waste into natural fertilizer.",
+    image: "/images/shop/book1.jpg",
+    link: "https://www.amazon.com/dp/B0H24D725B",
+  },
+  {
+    title: "Aquaponics: The Complete Guide — From Zero to Your First Harvest",
+    description:
+      "A practical guide based on real experience to help you build functional aquaponic systems, understand the nitrogen cycle, and grow food at home.",
+    image: "/images/shop/book2.jpg",
+    link: "https://a.co/d/0gRcplww",
+  },
+  {
+    title: "The Worm Revealed: Everything You Need to Know About Vermiculture",
+    description:
+      "An in-depth and practical guide about worm biology, feeding, reproduction, and the proper management of Eisenia fetida for producing high-quality vermicompost.",
+    image: "/images/shop/book3.jpg",
+    link: "https://a.co/d/04YEWNq2",
+  },
+];
+
+export default function ShopBooksPageEN() {
+  return (
+    <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">
+      <section className="mx-auto max-w-7xl">
+        <div className="mb-8 flex flex-wrap gap-4">
+          <Link href="/en/shop" className="text-sm font-semibold text-green-800 hover:underline">
+            ← Back to Shop
+          </Link>
+          <Link href="/en" className="text-sm font-semibold text-green-800 hover:underline">
+            Back to Home
+          </Link>
+        </div>
+
+        <header className="mb-12">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-green-800">KCGREENWORKS SHOP</p>
+          <h1 className="text-5xl font-bold leading-tight">Recommended Books</h1>
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-[#4b5a4b]">
+            Practical guides for learning aquaponics, worm farming, and sustainable food production at home.
+          </p>
+        </header>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {books.map((book) => (
+            <article key={book.title} className="overflow-hidden rounded-3xl border border-[#d8d2c3] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+              <div className="relative flex h-[520px] w-full items-center justify-center bg-[#eef2e8] p-6">
+                <Image src={book.image} alt={book.title} fill className="object-contain p-4" />
+              </div>
+              <div className="p-8">
+                <h2 className="text-2xl font-bold leading-tight">{book.title}</h2>
+                <p className="mt-5 text-[17px] leading-8 text-[#4b5a4b]">{book.description}</p>
+                <a href={book.link} target="_blank" rel="noopener noreferrer sponsored" className="mt-8 inline-flex rounded-2xl bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900">
+                  View on Amazon
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}

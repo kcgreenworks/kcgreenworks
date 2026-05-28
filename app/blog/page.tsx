@@ -21,7 +21,6 @@ export default function Blog() {
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-          
           <a href="/blog/acuaponia" className="rounded-2xl border border-[#dcd6c8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
             <h2 className="text-2xl font-bold text-[#2f3e2f]">🐟 Acuaponía</h2>
             <p className="mt-2 text-[#5a6b5a]">Sistemas caseros con peces, agua y plantas.</p>
@@ -35,6 +34,11 @@ export default function Blog() {
           <a href="/blog/vegetales" className="rounded-2xl border border-[#dcd6c8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
             <h2 className="text-2xl font-bold text-[#2f3e2f]">🥬 Vegetales</h2>
             <p className="mt-2 text-[#5a6b5a]">Cultivos fáciles para patio, balcón o tiestos.</p>
+          </a>
+
+          <a href="/shop" className="rounded-2xl border border-[#dcd6c8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
+            <h2 className="text-2xl font-bold text-[#2f3e2f]">🛒 Shop</h2>
+            <p className="mt-2 text-[#5a6b5a]">Libros y herramientas recomendadas para empezar mejor.</p>
           </a>
         </div>
       </section>

@@ -6,7 +6,7 @@ export default function QuePuedenConsumirLasLombrices() {
       <article className="mx-auto max-w-4xl space-y-10">
 
         <Link
-          href="/blog/lombricultura"
+          href="/en/blog/lombricultura"
           className="text-sm font-semibold text-green-800 hover:underline"
         >
           ← Back to Vermiculture
@@ -25,7 +25,7 @@ export default function QuePuedenConsumirLasLombrices() {
             </p>
 
             <img
-              src="/lombricultura2es.png"
+              src="/lombricultura2en.png"
               alt="Step-by-step vermiculture system"
               className="mx-auto w-full max-w-3xl rounded-xl shadow-md"
             />
@@ -53,7 +53,7 @@ export default function QuePuedenConsumirLasLombrices() {
             </p>
 
             <img
-              src="/lombricultura1es.png"
+              src="/lombricultura1en.png"
               alt="Worm digestive system"
               className="mx-auto w-full max-w-3xl rounded-xl shadow-md"
             />

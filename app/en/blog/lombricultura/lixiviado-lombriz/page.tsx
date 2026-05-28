@@ -12,7 +12,7 @@ export default function LixiviadoLombrizPage() {
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">
       <article className="mx-auto max-w-4xl space-y-10">
         <Link
-          href="/blog/lombricultura"
+          href="/en/blog/lombricultura"
           className="text-sm font-semibold text-green-800 hover:underline"
         >
           ← Back to Vermiculture
@@ -190,7 +190,7 @@ export default function LixiviadoLombrizPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/lombrices-humus.png"
+            src="/images/lombrices-humusen.png"
             alt="Red worms working in worm humus"
             width={1200}
             height={800}

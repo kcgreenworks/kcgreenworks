@@ -5,8 +5,6 @@ export default function Home() {
     <main className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f] px-6 py-12">
       <section className="mx-auto max-w-6xl">
         <div className="grid items-center gap-14 lg:grid-cols-2">
-          
-          {/* LEFT SIDE */}
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-wide text-green-800">
               KCGREENWORKS
@@ -29,10 +27,16 @@ export default function Home() {
               >
                 Ver guías
               </a>
+
+              <a
+                href="/shop"
+                className="rounded-xl bg-green-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-900"
+              >
+                Shop
+              </a>
             </div>
           </div>
 
-          {/* RIGHT SIDE IMAGE */}
           <div className="relative">
             <Image
               src="/images/blog/acuaponia/como-construir-acuaponico/kcgreenworks.png"
@@ -43,7 +47,6 @@ export default function Home() {
               className="rounded-3xl border border-[#d8d2c3] object-cover shadow-2xl"
             />
           </div>
-
         </div>
       </section>
     </main>

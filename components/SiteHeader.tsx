@@ -38,7 +38,7 @@ export default function SiteHeader() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          gap: "32px",
+          gap: "24px",
         }}
       >
         <Link
@@ -54,42 +54,58 @@ export default function SiteHeader() {
           KCGreenWorks
         </Link>
 
-        {/* LANGUAGE SWITCHER ONLY */}
-        <div
+        <nav
           style={{
             display: "flex",
-            overflow: "hidden",
-            borderRadius: "999px",
-            border: "1px solid #314232",
-            background: "#ffffff",
-            fontSize: "13px",
-            fontWeight: 800,
+            alignItems: "center",
+            gap: "18px",
+            fontSize: "15px",
+            fontWeight: 700,
           }}
         >
           <Link
-            href={toSpanishPath(pathname)}
-            style={{
-              padding: "6px 12px",
-              textDecoration: "none",
-              background: !isEnglish ? "#16251b" : "#ffffff",
-              color: !isEnglish ? "#ffffff" : "#314232",
-            }}
+            href={isEnglish ? "/en/shop" : "/shop"}
+            style={{ color: "#314232", textDecoration: "none" }}
           >
-            ES
+            {isEnglish ? "Shop" : "Tienda"}
           </Link>
 
-          <Link
-            href={toEnglishPath(pathname)}
+          <div
             style={{
-              padding: "6px 12px",
-              textDecoration: "none",
-              background: isEnglish ? "#16251b" : "#ffffff",
-              color: isEnglish ? "#ffffff" : "#314232",
+              display: "flex",
+              overflow: "hidden",
+              borderRadius: "999px",
+              border: "1px solid #314232",
+              background: "#ffffff",
+              fontSize: "13px",
+              fontWeight: 800,
             }}
           >
-            EN
-          </Link>
-        </div>
+            <Link
+              href={toSpanishPath(pathname)}
+              style={{
+                padding: "6px 12px",
+                textDecoration: "none",
+                background: !isEnglish ? "#16251b" : "#ffffff",
+                color: !isEnglish ? "#ffffff" : "#314232",
+              }}
+            >
+              ES
+            </Link>
+
+            <Link
+              href={toEnglishPath(pathname)}
+              style={{
+                padding: "6px 12px",
+                textDecoration: "none",
+                background: isEnglish ? "#16251b" : "#ffffff",
+                color: isEnglish ? "#ffffff" : "#314232",
+              }}
+            >
+              EN
+            </Link>
+          </div>
+        </nav>
       </div>
     </header>
   );
