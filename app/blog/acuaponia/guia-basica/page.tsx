@@ -11,17 +11,11 @@ export default function GuiaAcuaponia() {
         </h1>
 
         <p className="text-lg text-[#4b5a4b]">
-          La acuaponía es un sistema de producción de alimentos que integra acuicultura
-          (crianza de peces) con hidroponía (cultivo sin suelo), creando un ecosistema
-          cerrado donde los desechos de los peces se convierten en nutrientes para las
-          plantas mediante procesos biológicos naturales. No es un proyecto bonito: es un
-          sistema vivo que depende del equilibrio químico, biológico y mecánico.
+          Cuando yo monté mis primeros sistemas de acuaponía, pensaba que todo se trataba de sembrar plantas y alimentar peces. Según mi experiencia, la realidad es mucho más interesante. La acuaponía combina la crianza de peces con el cultivo de plantas sin suelo, creando un ecosistema donde los desechos de los peces terminan convirtiéndose en nutrientes para las plantas gracias al trabajo de bacterias beneficiosas. Lo que comenzó para mí como una curiosidad terminó enseñándome cómo funciona uno de los ciclos naturales más eficientes que existen.
         </p>
 
         <p>
-          Cuando está bien diseñado, el sistema es altamente eficiente: reutiliza agua,
-          reduce fertilizantes externos y permite producción constante en espacios
-          pequeños. Cuando está mal diseñado, falla rápido. No hay punto medio.
+          Así me pasó a mí más de una vez: cuando el sistema está bien balanceado, el agua se mantiene limpia, las plantas crecen con fuerza y los peces se mantienen saludables. Pero cuando uno descuida detalles como la filtración, la oxigenación o la cantidad de alimento, los problemas aparecen rápido. La acuaponía recompensa la observación diaria y castiga la improvisación.
         </p>
 
         <figure className="my-8">

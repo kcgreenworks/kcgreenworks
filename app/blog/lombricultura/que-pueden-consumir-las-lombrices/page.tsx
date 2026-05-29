@@ -17,11 +17,11 @@ export default function QuePuedenConsumirLasLombrices() {
           {/* TITULO */}
           <div className="space-y-4">
             <h1 className="text-4xl font-bold md:text-5xl leading-tight">
-              Qué pueden comer las lombrices y cómo lo convierten en composta
+              Qué les doy de comer a mis lombrices y por qué funciona y cómo lo convierten en composta
             </h1>
 
             <p className="text-lg text-[#4b5a4b]">
-              Las lombrices no convierten “basura” en abono por arte de magia. Trabajan junto a bacterias, hongos y microorganismos para transformar residuos orgánicos en humus estable, oscuro y lleno de vida, con olor a tierra limpia y altamente nutritivo para las plantas.
+              Cuando yo empecé a trabajar con lombrices, una de las cosas que más me sorprendió fue ver cómo algo tan simple como una cáscara de guineo o un puñado de hojas secas terminaba convertido en un material oscuro con olor a bosque después de la lluvia. Según mi experiencia, las lombrices no hacen magia. Lo que hacen es trabajar junto a bacterias, hongos y otros microorganismos para transformar residuos orgánicos en humus de lombriz, uno de los mejores mejoradores de suelo que he utilizado.
             </p>
 
             <img
@@ -38,7 +38,7 @@ export default function QuePuedenConsumirLasLombrices() {
             </h2>
 
             <p>
-              La lombriz roja californiana ingiere materia orgánica en descomposición junto con microorganismos. Dentro de su sistema digestivo ocurre un proceso clave:
+              Así me pasó a mí: al principio pensaba que la lombriz era la única responsable de todo el proceso. Con el tiempo aprendí que la lombriz roja californiana trabaja en equipo con millones de microorganismos. Cuando consume materia orgánica en descomposición ocurren varios procesos importantes:
             </p>
 
             <ul className="list-disc pl-6 space-y-2">
@@ -49,7 +49,7 @@ export default function QuePuedenConsumirLasLombrices() {
             </ul>
 
             <p className="font-semibold">
-              El resultado final no es tierra común: es un fertilizante biológicamente activo.
+              El resultado final no es tierra común. Es humus de lombriz, un material biológicamente activo que contiene microorganismos beneficiosos, nutrientes estabilizados y una estructura que ayuda a mejorar la salud del suelo.
             </p>
 
             <img
@@ -62,13 +62,13 @@ export default function QuePuedenConsumirLasLombrices() {
           {/* LISTA */}
           <div className="space-y-6">
             <h2 className="text-2xl font-bold">
-              Qué pueden comer las lombrices
+              Qué les doy de comer a mis lombrices y por qué funciona
             </h2>
 
             <div className="space-y-2">
               <h3 className="text-xl font-semibold">Frutas y vegetales</h3>
               <p>
-                Cáscaras, restos de cocina, pulpa y hojas. Son ricos en agua y azúcares naturales.
+                Cáscaras, restos de cocina, pulpa. Son ricos en agua y azúcares naturales.
               </p>
               <p className="font-semibold">
                 Se descomponen rápido y aceleran el proceso de producción de humus.
@@ -105,14 +105,7 @@ export default function QuePuedenConsumirLasLombrices() {
               </p>
             </div>
 
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Cáscaras de huevo</h3>
-              <p>
-                Fuente natural de calcio. Ayudan a regular el pH.
-              </p>
-            </div>
-
-            <div className="space-y-2">
+           <div className="space-y-2">
               <h3 className="text-xl font-semibold">Residuos de jardín</h3>
               <p>
                 Césped seco, hojas y restos de poda.

@@ -28,10 +28,7 @@ export default function HierbaBuenaMentaPage() {
           </h1>
 
           <p className="text-lg leading-8 text-[#405040]">
-            Aprende cómo sembrar hierba buena en casa de una forma simple,
-            práctica y realista. Esta planta es perfecta para empezar porque
-            crece rápido, huele brutal, sirve para cocinar, para bebidas, para
-            remedios caseros y no necesita un terreno grande.
+            Hay olores que inmediatamente me transportan al huerto. Uno de ellos es el de la hierba buena recién cortada. Todavía recuerdo la primera vez que pasé la mano por una planta madura y el aroma se quedó pegado en mis dedos por horas. Desde entonces la he sembrado de muchas maneras, en macetas, camas de cultivo y sistemas controlados. Según mi experiencia, pocas plantas ofrecen tanto a cambio de tan poco mantenimiento. Además de crecer rápido, sirve para cocinar, preparar bebidas, atraer polinizadores y tener siempre algo verde produciendo cerca de la casa.
           </p>
         </header>
 
@@ -48,10 +45,7 @@ export default function HierbaBuenaMentaPage() {
 
         <section className="space-y-5 text-lg leading-8">
           <p>
-            La hierba buena, también conocida como menta, es una de esas plantas
-            que vale la pena tener en casa. No ocupa mucho espacio, se adapta
-            bien a macetas y puede producir hojas frescas durante casi todo el
-            año si la cuidas correctamente.
+            Si me preguntas cuál es una de las mejores plantas para alguien que está comenzando a cultivar, casi siempre menciono la hierba buena. Así me pasó a mí: mientras otras plantas me exigían más atención, la menta seguía creciendo y produciendo hojas nuevas. Su capacidad de adaptación es una de las razones por las que se cultiva en tantas partes del mundo.
           </p>
 
           <p>

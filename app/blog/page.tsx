@@ -8,7 +8,7 @@ export default function Blog() {
 
         <div className="mt-8 mb-10">
           <p className="text-sm font-semibold uppercase tracking-wide text-green-800">
-            KCGreenWorks Learning Hub
+            Portal de Aprendizaje KC Green Works
           </p>
 
           <h1 className="mt-3 text-4xl font-bold md:text-5xl">

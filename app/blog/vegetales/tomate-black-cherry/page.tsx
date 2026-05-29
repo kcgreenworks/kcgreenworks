@@ -2,182 +2,170 @@ export default function Page() {
   return (
     <div className="max-w-3xl mx-auto p-6">
 
-   <a
+      <a
         href="/blog/vegetales"
         className="text-sm font-semibold text-green-800 mb-6 inline-block"
       >
         ← Volver a vegetales
       </a>
 
-      {/* HERO IMAGE */}
       <div className="flex justify-center gap-4 mb-6">
-  <img src="/tomates1.jpeg" className="w-[200px] rounded-xl" />
-  <img src="/tomates2.jpeg" className="w-[200px] rounded-xl" />
-<img src="/tomates3.jpeg" className="w-[200px] rounded-xl" />
-</div>
+        <img src="/tomates1.jpeg" className="w-[200px] rounded-xl" />
+        <img src="/tomates2.jpeg" className="w-[200px] rounded-xl" />
+        <img src="/tomates3.jpeg" className="w-[200px] rounded-xl" />
+      </div>
 
-      {/* TITULO */}
       <h1 className="text-4xl font-bold mb-4">
-        Cómo sembrar tomates en casa (guía real)
+        Cómo sembré tomates Black Cherry y lo que aprendí en el proceso
       </h1>
 
-      {/* INTRO */}
       <p className="mb-6 text-lg">
-        Estos tomates que ves aquí los sembré yo mismo. No necesitas mucho espacio,
-        solo hacerlo bien desde el principio.
+        Hay plantas que uno siembra por necesidad y otras que uno vuelve a sembrar porque se convierten en favoritas. 
+        Así me pasó a mí con el tomate Black Cherry. La primera vez que vi aquellos tomates pequeños de color oscuro pensé que eran curiosos, 
+        pero después de probarlos entendí por qué tanta gente los considera una de las mejores variedades cherry que existen.
       </p>
 
-{/* CONTENIDO */}
-<div className="space-y-6 text-lg leading-relaxed">
+      <div className="space-y-6 text-lg leading-relaxed">
 
-  <h2 className="text-2xl font-bold">Tomate Black Cherry: guía completa desde semilla hasta cosecha</h2>
+        <h2 className="text-2xl font-bold">
+          Mi experiencia cultivando tomates Black Cherry
+        </h2>
 
-  <p>
-    El tomate Black Cherry es una variedad tipo cherry de color oscuro (morado profundo casi negro), 
-    conocida por su sabor dulce, intenso y ligeramente ahumado. Es una planta vigorosa, de crecimiento indeterminado, 
-    lo que significa que sigue produciendo frutos durante toda la temporada si se cuida correctamente.
-  </p>
+        <p>
+          Según mi experiencia, pocas variedades combinan producción, sabor y resistencia como el Black Cherry. 
+          Es un tomate cherry de crecimiento indeterminado, lo que significa que sigue creciendo y produciendo flores 
+          y frutos durante toda la temporada mientras tenga buenas condiciones. Los frutos desarrollan un color morado 
+          profundo casi negro y tienen un sabor dulce con una intensidad que los diferencia de los cherry tradicionales.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Tiempo desde semilla hasta cosecha</h3>
-  <p>
-    Desde semilla hasta cosecha, el Black Cherry tarda aproximadamente entre 65 y 80 días después del trasplante.
-    Si empiezas desde semilla, añade unas 4 a 6 semanas adicionales para germinación y desarrollo inicial.
-  </p>
+        <p>
+          Cuando yo hice mis primeras siembras de esta variedad aprendí algo importante: los tomates recompensan la paciencia. 
+          Mientras mejor prepares el terreno y más atención prestes durante las primeras semanas, mejores resultados obtendrás después.
+        </p>
 
-  <ul className="list-disc ml-6">
-    <li>Germinación: 5 a 10 días</li>
-    <li>Trasplante: 4 a 6 semanas</li>
-    <li>Producción: 65 a 80 días</li>
-  </ul>
+        <h3 className="text-xl font-bold mt-6">
+          ¿Cuánto tarda desde semilla hasta cosecha?
+        </h3>
 
-  <h3 className="text-xl font-bold mt-6">Cómo sembrar desde semilla</h3>
-  <p>
-    Las semillas deben sembrarse en interior o en ambiente controlado si la temperatura es menor a 65°F. 
-    Usa bandejas de germinación o pequeños envases con buen drenaje.
-  </p>
+        <p>
+          Los datos que he observado coinciden con la información utilizada por productores y casas semilleras. 
+          Normalmente el Black Cherry tarda entre 65 y 80 días desde el trasplante hasta las primeras cosechas.
+        </p>
 
-  <ul className="list-disc ml-6">
-    <li>Profundidad: 0.5 cm (muy superficial)</li>
-    <li>Temperatura ideal: 70–85°F</li>
-    <li>Luz: indirecta hasta germinar, luego luz fuerte</li>
-    <li>Humedad: suelo húmedo, no encharcado</li>
-  </ul>
+        <ul className="list-disc ml-6">
+          <li>Germinación: 5 a 10 días</li>
+          <li>Desarrollo de plántula: 4 a 6 semanas</li>
+          <li>Producción después del trasplante: 65 a 80 días</li>
+        </ul>
 
-  <p>
-    Una vez tengan 2–3 hojas reales, están listas para trasplante.
-  </p>
+        <p>
+          En otras palabras, desde que colocas la semilla hasta que recoges los primeros tomates pueden pasar aproximadamente entre 100 y 120 días dependiendo del clima y el manejo.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Tipo de suelo ideal</h3>
-  <p>
-    El Black Cherry necesita un suelo suelto, bien drenado y rico en materia orgánica.
-  </p>
+        <h3 className="text-xl font-bold mt-6">
+          Cómo comienzo mis plantas desde semilla
+        </h3>
 
-  <ul className="list-disc ml-6">
-    <li>pH ideal: 6.0 – 6.8</li>
-    <li>Mezcla recomendada: tierra + compost + perlita</li>
-    <li>Evitar: suelos compactos o que retengan demasiada agua</li>
-  </ul>
+        <p>
+          Cuando yo empiezo tomates desde semilla, prefiero hacerlo en bandejas de germinación o recipientes pequeños con buen drenaje. 
+          Esto me permite controlar mejor la humedad y evitar pérdidas innecesarias.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Siembra en tierra (suelo directo)</h3>
-  <p>
-    Si siembras en el suelo, asegúrate de que el área reciba al menos 6 a 8 horas de sol directo.
-  </p>
+        <ul className="list-disc ml-6">
+          <li>Profundidad de siembra: aproximadamente 0.5 cm</li>
+          <li>Temperatura ideal: entre 70°F y 85°F</li>
+          <li>Luz brillante después de germinar</li>
+          <li>Humedad constante sin encharcar</li>
+        </ul>
 
-  <ul className="list-disc ml-6">
-    <li>Separación: 60–90 cm entre plantas</li>
-    <li>Profundidad: enterrar parte del tallo para raíces más fuertes</li>
-    <li>Soporte: usar estacas o jaulas desde el inicio</li>
-  </ul>
+        <p>
+          Así me pasó a mí varias veces: las semillas germinan rápido, pero si reciben poca luz las plántulas se estiran demasiado y se debilitan.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Siembra en tiesto (maceta)</h3>
-  <p>
-    Esta variedad crece muy bien en macetas si se le da suficiente espacio.
-  </p>
+        <h3 className="text-xl font-bold mt-6">
+          El suelo que mejor resultado me ha dado
+        </h3>
 
-  <ul className="list-disc ml-6">
-    <li>Tamaño mínimo: 5 galones (ideal 7–10 galones)</li>
-    <li>Drenaje: obligatorio (agujeros en la base)</li>
-    <li>Ubicación: sol directo</li>
-    <li>Riego: más frecuente que en suelo</li>
-  </ul>
+        <p>
+          Según mi experiencia, los tomates agradecen un suelo suelto y lleno de materia orgánica. 
+          No les gusta permanecer con las raíces encharcadas durante mucho tiempo.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Riego correcto</h3>
-  <p>
-    El riego debe ser constante pero controlado. El exceso de agua causa enfermedades y raíces débiles.
-  </p>
+        <ul className="list-disc ml-6">
+          <li>pH ideal: entre 6.0 y 6.8</li>
+          <li>Buen drenaje</li>
+          <li>Alta cantidad de materia orgánica</li>
+          <li>Buena aireación en la zona radicular</li>
+        </ul>
 
-  <ul className="list-disc ml-6">
-    <li>Frecuencia: 2–4 veces por semana según clima</li>
-    <li>Evitar mojar hojas</li>
-    <li>Regar en la base</li>
-  </ul>
+        <h3 className="text-xl font-bold mt-6">
+          Siembra directa en suelo
+        </h3>
 
-  <h3 className="text-xl font-bold mt-6">Luz y clima</h3>
-  <ul className="list-disc ml-6">
-    <li>Sol: mínimo 6–8 horas directas</li>
-    <li>Temperatura ideal: 70–90°F</li>
-    <li>No tolera heladas</li>
-  </ul>
+        <p>
+          Cuando trasplanto al terreno, siempre busco una zona que reciba entre seis y ocho horas de sol directo. 
+          Los tomates pueden sobrevivir con menos, pero producirán mucho mejor cuando reciben la cantidad adecuada de luz.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Crecimiento de la planta</h3>
-  <p>
-    El Black Cherry es una planta indeterminada, lo que significa que crece como enredadera y puede alcanzar 
-    más de 6 pies (1.8 metros). Necesita soporte constante.
-  </p>
+        <p>
+          Uno de los errores que cometí al principio fue sembrarlos demasiado juntos. Con el tiempo entendí que una buena circulación de aire ayuda a reducir problemas de enfermedades y mejora el desarrollo de la planta.
+        </p>
 
-  <ul className="list-disc ml-6">
-    <li>Altura: 5–7 pies</li>
-    <li>Tipo: enredadera</li>
-    <li>Producción: continua</li>
-  </ul>
+        <h3 className="text-xl font-bold mt-6">
+          Riego y nutrición
+        </h3>
 
-  <h3 className="text-xl font-bold mt-6">Poda (importante)</h3>
-  <p>
-    Debes eliminar los “chupones” (brotes entre ramas) para mejorar producción.
-  </p>
+        <p>
+          El riego debe ser profundo y constante. Los cambios bruscos entre sequía y exceso de agua pueden provocar rajaduras en los frutos y otros problemas fisiológicos.
+        </p>
 
-  <ul className="list-disc ml-6">
-    <li>Mejor flujo de aire</li>
-    <li>Más energía hacia frutos</li>
-    <li>Menos enfermedades</li>
-  </ul>
+        <p>
+          Según mi experiencia, es mejor regar menos veces pero de forma profunda que dar pequeños riegos superficiales todos los días.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Fertilización</h3>
-  <p>
-    Usa fertilizante balanceado al inicio, luego uno alto en fósforo y potasio para floración y frutos.
-  </p>
+        <h3 className="text-xl font-bold mt-6">
+          Tutorado y poda
+        </h3>
 
-  <ul className="list-disc ml-6">
-    <li>Cada 2–3 semanas</li>
-    <li>Evitar exceso de nitrógeno</li>
-  </ul>
+        <p>
+          El Black Cherry crece con fuerza. Cuando yo hice mis primeras siembras subestimé cuánto podía crecer una sola planta. 
+          Desde entonces siempre utilizo estacas, jaulas o sistemas de soporte.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Tiempo de cosecha</h3>
-  <p>
-    Los frutos estarán listos cuando tengan un color oscuro uniforme (rojo oscuro/morado) y estén ligeramente suaves al tacto.
-  </p>
+        <p>
+          Mantener la planta guiada facilita la cosecha, mejora la ventilación y ayuda a que los frutos reciban mejor iluminación.
+        </p>
 
-  <ul className="list-disc ml-6">
-    <li>Tamaño: pequeño tipo cherry</li>
-    <li>Sabor: dulce, intenso</li>
-    <li>Cosecha continua</li>
-  </ul>
+        <h3 className="text-xl font-bold mt-6">
+          La cosecha
+        </h3>
 
-  <h3 className="text-xl font-bold mt-6">Problemas comunes</h3>
-  <ul className="list-disc ml-6">
-    <li>Hojas amarillas: exceso de agua o falta de nutrientes</li>
-    <li>Frutos que se rajan: riego irregular</li>
-    <li>Plagas: pulgones, mosca blanca</li>
-  </ul>
+        <p>
+          Una de las partes más satisfactorias llega cuando los frutos adquieren ese color oscuro característico. 
+          Ahí es cuando comienzan a desarrollar el sabor por el que esta variedad es tan conocida.
+        </p>
 
-  <h3 className="text-xl font-bold mt-6">Consejo final</h3>
-  <p>
-    Esta variedad es perfecta para principiantes que quieren resultados rápidos pero con calidad. 
-    Si le das sol, buen drenaje y soporte, vas a tener tomates constantemente durante toda la temporada.
-  </p>
+        <p>
+          Según mi experiencia, el mejor momento para cosechar es cuando el fruto tiene color uniforme y cede ligeramente al tacto sin sentirse blando.
+        </p>
 
-</div>
+        <h2 className="text-2xl font-bold">
+          Lo que haría diferente si tuviera que empezar otra vez
+        </h2>
 
+        <p>
+          Si hoy tuviera que comenzar desde cero, prepararía mejor el suelo desde el principio, instalaría soporte antes del trasplante y prestaría más atención a la distancia entre plantas.
+        </p>
+
+        <p>
+          Los tomates Black Cherry no son difíciles de cultivar, pero sí responden muy bien cuando se les proporciona buena nutrición, suficiente sol y un manejo constante.
+        </p>
+
+        <p>
+          Después de cultivar diferentes variedades, sigo regresando a esta porque combina productividad, sabor y belleza en una sola planta. Y cada vez que veo los primeros racimos cargados de tomates oscuros, recuerdo por qué se convirtió en una de mis favoritas.
+        </p>
+
+      </div>
     </div>
   );
 }

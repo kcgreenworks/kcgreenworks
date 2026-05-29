@@ -14,7 +14,7 @@ export default function PimientosVerdesPage() {
       {/* BOTÓN VOLVER */}
       <div className="mb-6">
         <Link
-          href="/blog"
+          href="/blog/vegetales"
           className="text-green-700 font-semibold text-base hover:opacity-80 transition"
         >
           ← Volver a vegetales
@@ -28,14 +28,11 @@ export default function PimientosVerdesPage() {
           </p>
 
           <h1 className="text-4xl font-bold tracking-tight text-neutral-950">
-            Cómo sembrar pimientos verdes en casa: desde semilla hasta cosecha
+            Lo que aprendí sembrando pimientos verdes temporada tras temporada
           </h1>
 
           <p className="text-lg leading-8 text-neutral-700">
-            El pimiento verde es uno de esos cultivos que vale la pena tener en
-            el patio, en una cama elevada o hasta en tiestos grandes. No es el
-            vegetal más rápido del mundo, pero cuando la planta arranca bien,
-            produce bonito y te da comida fresca por varias semanas.
+            Hay cultivos que uno aprende a respetar porque obligan a tener paciencia. El pimiento verde es uno de ellos. La primera vez que sembré pimientos pensaba que iban a crecer tan rápido como una lechuga. Así no fue. Según mi experiencia, el pimiento se toma su tiempo, pero cuando finalmente comienza a producir, la espera vale la pena. Después de varias temporadas cultivándolo, he aprendido que los mejores resultados llegan cuando uno entiende el ritmo de la planta y deja de intentar apresurarla.
           </p>
         </header>
 

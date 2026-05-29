@@ -11,14 +11,13 @@ export default function ZucchiniGuia() {
 
         <section className="space-y-8">
 
-          {/* TITULO */}
           <div className="space-y-4">
             <h1 className="text-4xl font-bold md:text-5xl leading-tight">
-              Zucchini (calabacín): guía completa desde semilla hasta cosecha
+              Zucchini (calabacín): todo lo que aprendí desde la semilla hasta la cosecha
             </h1>
 
             <p className="text-lg text-[#4b5a4b]">
-              El zucchini es una de las plantas más productivas que puedes sembrar en casa. Crece rápido, produce mucho y responde bien tanto en suelo como en sistemas acuapónicos si está bien alimentado.
+              Hay cultivos que uno siembra una vez por curiosidad y termina sembrando todos los años. Así me pasó a mí con el zucchini. La primera vez que lo cultivé no esperaba gran cosa, pero bastaron unas semanas para darme cuenta de que estaba frente a una de las plantas más productivas que he trabajado. Según mi experiencia, pocas especies crecen tan rápido, producen tanto y responden tan bien cuando tienen agua, nutrientes y espacio suficiente.
             </p>
 
             <img
@@ -28,39 +27,37 @@ export default function ZucchiniGuia() {
             />
           </div>
 
-          {/* SEMILLA */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Desde semilla</h2>
+            <h2 className="text-2xl font-bold">Cómo empiezo mis plantas desde semilla</h2>
 
             <p>
-              El zucchini germina rápido si las condiciones son correctas.
+              Cuando yo hago una siembra de zucchini, casi siempre comienzo desde semilla. Una de las cosas que más me gusta de esta planta es la velocidad con la que germina cuando las condiciones son adecuadas.
             </p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Temperatura ideal: 20–30°C</li>
-              <li>Germinación: 3–7 días</li>
-              <li>Profundidad: 1–2 cm</li>
-              <li>Luz: necesaria desde que brota</li>
+              <li>Temperatura ideal: entre 20°C y 30°C</li>
+              <li>Germinación normal: 3 a 7 días</li>
+              <li>Profundidad de siembra: 1 a 2 cm</li>
+              <li>Necesita buena luz tan pronto emerge</li>
             </ul>
 
             <p className="font-semibold">
-              Error común: exceso de agua → pudre la semilla.
+              Uno de los errores más comunes que he visto es regar demasiado. Así me pasó a mí al principio y terminé perdiendo semillas por pudrición.
             </p>
           </div>
 
-          {/* CRECIMIENTO */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Crecimiento de la planta</h2>
+            <h2 className="text-2xl font-bold">El crecimiento sorprendente del zucchini</h2>
 
             <p>
-              Es una planta de crecimiento agresivo. En pocas semanas puede duplicar su tamaño.
+              Si nunca has cultivado zucchini, prepárate porque crece con una velocidad impresionante. Según mi experiencia, después de establecerse puede duplicar su tamaño en muy poco tiempo.
             </p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Necesita espacio (raíces y hojas grandes)</li>
-              <li>Alta demanda de nutrientes</li>
-              <li>Riego constante pero sin encharcar</li>
-              <li>Sol directo mínimo 6 horas</li>
+              <li>Necesita bastante espacio para raíces y hojas</li>
+              <li>Tiene alta demanda de nutrientes</li>
+              <li>Prefiere humedad constante sin encharcamientos</li>
+              <li>Produce mejor con al menos 6 horas de sol directo</li>
             </ul>
 
             <img
@@ -70,95 +67,67 @@ export default function ZucchiniGuia() {
             />
           </div>
 
-          {/* FLORACION */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Floración y polinización</h2>
+            <h2 className="text-2xl font-bold">La floración y la polinización</h2>
 
             <p>
-              El zucchini produce flores masculinas y femeninas separadas.
+              Una de las lecciones más importantes que aprendí fue que no basta con que la planta florezca. El zucchini produce flores masculinas y femeninas por separado y necesita polinización para desarrollar frutos correctamente.
             </p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Flor macho: solo produce polen</li>
-              <li>Flor hembra: tiene el fruto detrás</li>
-              <li>Necesita polinización para producir</li>
+              <li>Las flores masculinas producen polen</li>
+              <li>Las flores femeninas tienen un pequeño fruto detrás de la flor</li>
+              <li>La polinización suele realizarse mediante insectos</li>
             </ul>
 
             <p className="font-semibold">
-              Sin polinización → el fruto se pudre antes de crecer.
+              Cuando la polinización falla, el fruto comienza a desarrollarse pero termina pudriéndose antes de crecer.
             </p>
           </div>
 
-          {/* NUTRIENTES */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Necesidades de nutrientes</h2>
+            <h2 className="text-2xl font-bold">Los nutrientes que realmente necesita</h2>
 
             <p>
-              Es una planta exigente. Si no tiene nutrientes, no produce bien.
+              Según mi experiencia, el zucchini es generoso produciendo, pero también exige bastante. Mientras mejor alimentada esté la planta, mejor será la cosecha.
             </p>
 
             <ul className="list-disc pl-6 space-y-2">
-              <li>Nitrógeno → crecimiento de hojas</li>
-              <li>Fósforo → desarrollo de raíces y flores</li>
-              <li>Potasio → producción de frutos</li>
+              <li>Nitrógeno para desarrollar hojas vigorosas</li>
+              <li>Fósforo para raíces y floración</li>
+              <li>Potasio para la formación y calidad de los frutos</li>
             </ul>
 
             <p className="font-semibold">
-              En acuaponía, solo funciona bien en sistemas ya maduros.
+              En sistemas acuapónicos me ha funcionado mejor cuando el sistema ya está maduro y cuenta con suficiente carga nutricional.
             </p>
           </div>
 
-          {/* COSECHA */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Cosecha</h2>
+            <h2 className="text-2xl font-bold">La cosecha: cuándo recogerlos</h2>
 
             <p>
-              El zucchini se cosecha joven para mejor sabor y producción continua.
+              Uno de los errores que cometí al principio fue esperar demasiado para cosechar. El zucchini suele tener mejor textura y sabor cuando se recoge joven.
             </p>
-
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Tiempo: 40–60 días desde siembra</li>
-              <li>Tamaño ideal: 6–8 pulgadas</li>
-              <li>Cosecha frecuente = más producción</li>
-            </ul>
-
-            <img
-              src="/zucchini3.png"
-              alt="Zucchini listo para cosecha"
-              className="mx-auto w-full max-w-3xl rounded-xl shadow-md"
-            />
-          </div>
-
-          {/* SEMILLAS */}
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Cómo sacar semillas</h2>
 
             <p>
-              Para obtener semillas debes dejar que el fruto madure completamente.
+              La mayoría de los productores recomiendan cosechar entre 15 y 20 centímetros de longitud. Después de ese tamaño sigue siendo comestible, pero la textura cambia y las semillas se desarrollan más.
             </p>
 
-            <ul className="list-disc pl-6 space-y-2">
-              <li>Dejar crecer hasta que esté grande y duro</li>
-              <li>Abrir y extraer semillas</li>
-              <li>Lavar y secar completamente</li>
-              <li>Guardar en lugar seco</li>
-            </ul>
-
-            <p className="font-semibold">
-              No uses semillas de frutas inmaduras.
+            <p>
+              Según mi experiencia, mientras más frecuente coseches, más incentivas a la planta a seguir produciendo flores y frutos nuevos.
             </p>
           </div>
 
-          {/* CONCLUSION */}
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold">Conclusión</h2>
+            <h2 className="text-2xl font-bold">Lo que haría diferente si comenzara hoy</h2>
 
             <p>
-              El zucchini es una de las mejores plantas para producción casera, pero requiere nutrientes, espacio y manejo correcto.
+              Si tuviera que empezar desde cero, dedicaría más tiempo a preparar el suelo, mejoraría la polinización desde el principio y dejaría más espacio entre plantas.
             </p>
 
-            <p className="font-semibold">
-              Bien manejado = producción constante. Mal manejado = planta grande sin frutos.
+            <p>
+              Después de cultivar esta especie muchas veces, sigo pensando lo mismo: el zucchini es una de las mejores opciones para quien quiere resultados rápidos, cosechas abundantes y una planta que recompensa el esfuerzo con generosidad.
             </p>
           </div>
 

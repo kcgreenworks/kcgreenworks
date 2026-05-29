@@ -28,12 +28,7 @@ export default function LixiviadoLombrizPage() {
           </h1>
 
           <p className="text-lg leading-8 text-[#405040]">
-            El lixiviado de lombriz es un líquido oscuro que puede salir de una
-            vermicompostera cuando el agua pasa a través del material orgánico,
-            el humus y la cama donde viven las lombrices. Bien manejado y bien
-            diluido, puede ayudar a mejorar la vida del suelo y apoyar el
-            crecimiento de las plantas. Mal manejado, puede oler mal, fermentar
-            demasiado y hasta dañar raíces.
+            Cuando yo empecé a trabajar con lombrices, una de las preguntas que más escuchaba era sobre ese líquido oscuro que aparece en el fondo de algunas vermicomposteras. Según mi experiencia, el lixiviado de lombriz es uno de los temas más mal entendidos dentro de la lombricultura. He visto personas usarlo sin diluir, he visto plantas responder bien y también he visto errores que terminan afectando raíces y generando malos olores. Por eso quiero explicarte qué es realmente, cómo se forma y cómo lo utilizo yo cuando las condiciones son las correctas.
           </p>
         </header>
 
@@ -52,9 +47,7 @@ export default function LixiviadoLombrizPage() {
           <h2 className="text-3xl font-bold">Primero: no confundas lixiviado con té de humus</h2>
 
           <p>
-            Esto es importante. Mucha gente llama “té de lombriz” a cualquier
-            líquido oscuro que sale de la vermicompostera, pero no es exactamente
-            lo mismo.
+            Esto es algo que yo mismo tuve que aprender con el tiempo. Al principio pensaba que cualquier líquido oscuro que saliera de una vermicompostera era automáticamente un fertilizante perfecto. Así me pasó a mí y así le pasa a mucha gente. La realidad es que el lixiviado y el té de humus son productos distintos y entender esa diferencia puede evitar muchos problemas.
           </p>
 
           <p>

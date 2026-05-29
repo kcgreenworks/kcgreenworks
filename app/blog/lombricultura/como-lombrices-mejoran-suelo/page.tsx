@@ -28,11 +28,7 @@ export default function ComoLombricesMejoranSueloPage() {
           </h1>
 
           <p className="text-lg leading-8 text-[#405040]">
-            Las lombrices no “hacen magia”. Lo que hacen es transformar materia
-            orgánica, mover el suelo, activar microorganismos y producir humus:
-            una de las formas más estables y útiles de fertilidad natural. En
-            esta guía vas a entender, desde cero, qué ocurre realmente debajo de
-            la tierra.
+            Cuando yo empecé a trabajar con lombrices, escuché muchas veces que eran casi mágicas. Según mi experiencia, la realidad es todavía más impresionante. Las lombrices transforman materia orgánica, mejoran la estructura del suelo, estimulan la actividad microbiana y producen humus, uno de los materiales más valiosos que he utilizado para cultivar. En esta guía te voy a explicar, tal como yo lo he visto ocurrir una y otra vez, qué pasa realmente debajo de la tierra y por qué un suelo con lombrices se comporta diferente a uno que no las tiene.
           </p>
         </header>
 
@@ -53,10 +49,7 @@ export default function ComoLombricesMejoranSueloPage() {
           </h2>
 
           <p>
-            Un suelo sano no es simplemente tierra suelta. Un suelo sano tiene
-            aire, humedad, materia orgánica, minerales, raíces, hongos, bacterias
-            y pequeños organismos trabajando juntos. Las lombrices son parte de
-            ese sistema.
+            Una de las primeras cosas que aprendí fue que un suelo sano no es solamente tierra. Cuando uno escarba en un suelo verdaderamente vivo encuentra raíces, microorganismos, humedad, materia orgánica y una enorme cantidad de actividad biológica. Las lombrices forman parte de ese equipo silencioso que trabaja las veinticuatro horas del día.
           </p>
 
           <p>

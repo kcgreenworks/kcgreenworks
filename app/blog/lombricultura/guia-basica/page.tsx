@@ -15,16 +15,16 @@ export default function GuiaLombricultura() {
 
         {/* TITULO */}
         <h1 className="text-4xl md:text-5xl font-bold">
-          Lombricultura: guía completa desde cero (bien hecha)
+          Lombricultura: todo lo que aprendí después de criar miles de lombrices
         </h1>
 
         {/* INTRO */}
         <p className="text-lg text-[#4b5a4b]">
-          La lombricultura es un sistema biológico donde las lombrices transforman residuos orgánicos en humus, uno de los fertilizantes más completos que existen. No es simplemente compostar: es un proceso controlado que depende del equilibrio entre materia orgánica, humedad, oxígeno y actividad microbiana.
+          Si me hubieran preguntado hace años qué podía hacer una lombriz, probablemente habría dado una respuesta bastante simple. Hoy pienso muy distinto. Después de pasar incontables horas observándolas trabajar, cometer errores, corregir sistemas y ver cómo transforman residuos orgánicos en humus de altísima calidad, puedo decirte que la lombricultura es una de las herramientas más poderosas que existen para mejorar un suelo de forma natural. Según mi experiencia, no se trata solamente de compostar; se trata de entender un ecosistema vivo donde la humedad, el oxígeno, la materia orgánica y millones de microorganismos trabajan junto a las lombrices.
         </p>
 
         <p>
-          Cuando se maneja correctamente, reduce desperdicios, mejora el suelo y produce fertilizante de alta calidad en espacios pequeños.
+          Así me pasó a mí: mientras más aprendía sobre las lombrices, más entendía que los residuos que muchos consideran basura en realidad son materia prima. Cuando el sistema se maneja correctamente, ayuda a reducir desperdicios, mejora la estructura del suelo, aumenta la actividad biológica y produce un fertilizante estable que puede utilizarse en huertos, jardines y sistemas agrícolas de todo tipo.
         </p>
 
         {/* IMÁGENES */}

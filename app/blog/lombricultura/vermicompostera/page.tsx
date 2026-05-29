@@ -28,12 +28,7 @@ export default function Page() {
           </h1>
 
           <p className="text-lg leading-8 text-[#4b5a4b]">
-            Si quieres reducir basura, aprovechar los residuos de la cocina y
-            producir un abono natural para tus plantas, una vermicompostera
-            casera es uno de los proyectos más útiles que puedes empezar. No
-            necesitas un patio grande ni equipo caro. Con una caja, material
-            seco, restos vegetales y lombrices rojas, puedes crear un sistema
-            vivo que transforma desperdicios en humus de lombriz.
+            Cuando yo construí mi primera vermicompostera, no estaba pensando en producir toneladas de humus. Lo que quería era aprovechar mejor los residuos orgánicos y entender qué hacían realmente las lombrices. Según mi experiencia, una vermicompostera casera es uno de los proyectos más útiles que una persona puede comenzar. Con una caja sencilla, material seco, restos vegetales y lombrices rojas, puedes transformar desperdicios que normalmente terminarían en la basura en un abono de altísima calidad para tus plantas.
           </p>
         </header>
 
@@ -56,15 +51,14 @@ export default function Page() {
           <h2 className="text-3xl font-bold">¿Qué es una vermicompostera casera?</h2>
 
           <p className="leading-8">
-            Una <strong>vermicompostera casera</strong> es un recipiente donde
-            las lombrices convierten residuos orgánicos en humus. El humus es un
+            Según mi experiencia, una <strong>vermicompostera casera</strong> es mucho más que un recipiente con lombrices. Es un ecosistema vivo donde las lombrices convierten residuos orgánicos en humus. El humus es un
             abono oscuro, suelto y con olor a tierra limpia. Sirve para mejorar
             la vida del suelo, alimentar plantas y ayudar a que el huerto retenga
             mejor la humedad.
           </p>
 
           <p className="leading-8">
-            La clave está en entender que esto no es un zafacón. Es un pequeño
+            Algo que aprendí bastante rápido es que esto no es un zafacón. Es un pequeño
             ecosistema. Las lombrices trabajan, pero necesitan condiciones
             estables: humedad, aire, sombra, temperatura adecuada y comida en la
             cantidad correcta.
