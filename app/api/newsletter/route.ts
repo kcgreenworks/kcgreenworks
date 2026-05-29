@@ -1,11 +1,10 @@
-import { NextResponse } from "next/server";
-
 export async function POST(request: Request) {
   try {
-    const { email } = await request.json();
+    const formData = await request.formData();
+    const email = String(formData.get("email") || "");
 
     if (!email || !email.includes("@")) {
-      return NextResponse.json({ message: "Email inválido." }, { status: 400 });
+      return Response.redirect(new URL("/?newsletter=invalid", request.url), 302);
     }
 
     const response = await fetch("https://api.brevo.com/v3/contacts", {
@@ -25,17 +24,11 @@ export async function POST(request: Request) {
     });
 
     if (!response.ok) {
-      return NextResponse.json(
-        { message: "No se pudo registrar el email." },
-        { status: response.status }
-      );
+      return Response.redirect(new URL("/?newsletter=error", request.url), 302);
     }
 
-    return NextResponse.json({ message: "Registro completado." });
+    return Response.redirect(new URL("/gracias", request.url), 302);
   } catch {
-    return NextResponse.json(
-      { message: "Error interno del servidor." },
-      { status: 500 }
-    );
+    return Response.redirect(new URL("/?newsletter=error", request.url), 302);
   }
 }
