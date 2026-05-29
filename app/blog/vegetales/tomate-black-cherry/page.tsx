@@ -10,7 +10,7 @@ export default function Page() {
       </a>
 
       <div className="flex justify-center gap-4 mb-6">
-        <img src="/public/tomates1.jpeg" className="w-[200px] rounded-xl" />
+        <img src="/tomates1.jpeg" className="w-[200px] rounded-xl" />
         <img src="/tomates2.jpeg" className="w-[200px] rounded-xl" />
         <img src="/tomates3.jpeg" className="w-[200px] rounded-xl" />
       </div>
