@@ -49,6 +49,55 @@ export default function HomeEN() {
           </div>
         </div>
       </section>
+
+      <section className="mx-auto mt-24 max-w-6xl overflow-hidden rounded-[2rem] bg-[#17301f] shadow-2xl">
+        <div className="grid items-center gap-8 p-8 md:grid-cols-[1.1fr_0.9fr] md:p-12">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-[#c7e86b]">
+              KCGreenWorks Community
+            </p>
+
+            <h2 className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl">
+              Learn from my real-world experience with gardening,
+              vermicomposting, and aquaponics.
+            </h2>
+
+            <p className="mt-4 max-w-2xl text-lg leading-8 text-green-100">
+              Get practical tips, lessons learned, mistakes to avoid, and
+              step-by-step guides delivered directly to your inbox.
+            </p>
+          </div>
+
+          <form
+            action="/api/newsletter"
+            method="POST"
+            className="rounded-3xl bg-white p-6 shadow-lg"
+          >
+            <label className="block text-sm font-semibold text-green-950">
+              Your email address
+            </label>
+
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+              className="mt-3 w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-green-700"
+            />
+
+            <button
+              type="submit"
+              className="mt-4 w-full rounded-xl bg-[#c7e86b] px-6 py-3 font-bold text-[#17301f] transition hover:bg-[#b5d957]"
+            >
+              Join Free
+            </button>
+
+            <p className="mt-3 text-center text-xs text-gray-500">
+              No spam. Just useful content for growing your own food.
+            </p>
+          </form>
+        </div>
+      </section>
     </main>
   );
 }
