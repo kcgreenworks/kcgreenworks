@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -95,6 +96,28 @@ export default function Home() {
             </p>
           </form>
         </div>
+      </section>
+
+      <section className="mx-auto mt-24 max-w-6xl text-center">
+        <h2 className="text-3xl font-bold text-[#1f2a1f] md:text-4xl">
+          Últimas publicaciones
+        </h2>
+
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-[#4b5a4b]">
+          Síguenos en Instagram para más contenido sobre huertos, vermicompostaje y acuaponía.
+        </p>
+
+        <div className="mt-10">
+          <div
+            className="elfsight-app-9c15b5ae-f9cc-4986-acd6-adcf543d3653"
+            data-elfsight-app-lazy
+          ></div>
+        </div>
+
+        <Script
+          src="https://elfsightcdn.com/platform.js"
+          strategy="lazyOnload"
+        />
       </section>
     </main>
   );
