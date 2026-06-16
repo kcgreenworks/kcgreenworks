@@ -20,6 +20,27 @@ const books = [
     image: "/images/shop/book3.jpg",
     link: "https://a.co/d/04YEWNq2",
   },
+  {
+    title: "PECES PARA ACUAPONÍA",
+    description:
+      "Cría, reproducción, alimentación y selección de peces para sistemas acuapónicos.",
+    image: "/images/shop/book4.jpg",
+    link: "https://a.co/d/0dbs9z5j",
+  },
+  {
+    title: "ACUAPONÍA PARA PRINCIPIANTES",
+    description:
+      "Guía práctica para comenzar desde cero con sistemas acuapónicos caseros.",
+    image: "/images/shop/book5.jpg",
+    link: "#",
+  },
+  {
+    title: "ACUAPONÍA EN CASA",
+    description:
+      "La guía completa para construir tu sistema y producir alimentos en casa.",
+    image: "/images/shop/book6.jpg",
+    link: "https://a.co/d/00LlFNKN",
+  },
 ];
 
 const products = [
@@ -92,7 +113,7 @@ const products = [
   },
 ];
 
-function ProductCard({
+function CarouselCard({
   item,
   buttonText,
 }: {
@@ -100,8 +121,8 @@ function ProductCard({
   buttonText: string;
 }) {
   return (
-    <div className="overflow-hidden rounded-2xl border border-[#d8d2c3] bg-white shadow-sm">
-      <div className="relative h-[190px] bg-[#eef2e8]">
+    <div className="w-[210px] shrink-0 overflow-hidden rounded-2xl border border-[#d8d2c3] bg-white shadow-sm md:w-[240px]">
+      <div className="relative h-[170px] bg-[#eef2e8]">
         <Image
           src={item.image}
           alt={item.title}
@@ -111,9 +132,11 @@ function ProductCard({
       </div>
 
       <div className="p-5">
-        <h3 className="text-lg font-bold leading-snug">{item.title}</h3>
+        <h3 className="min-h-[40px] text-base font-bold leading-snug">
+          {item.title}
+        </h3>
 
-        <p className="mt-2 min-h-[48px] text-xs leading-5 text-[#4b5a4b]">
+        <p className="mt-2 min-h-[48px] text-sm leading-6 text-[#4b5a4b]">
           {item.description}
         </p>
 
@@ -122,46 +145,6 @@ function ProductCard({
           target="_blank"
           rel="noopener noreferrer sponsored"
           className="mt-5 inline-flex rounded-xl bg-green-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-green-900"
-        >
-          {buttonText}
-        </a>
-      </div>
-    </div>
-  );
-}
-
-function CarouselCard({
-  item,
-  buttonText,
-}: {
-  item: { title: string; description: string; image: string; link: string };
-  buttonText: string;
-}) {
-  return (
-    <div className="w-[220px] shrink-0 overflow-hidden rounded-2xl border border-[#d8d2c3] bg-white shadow-sm">
-      <div className="relative h-[140px] bg-[#eef2e8]">
-        <Image
-          src={item.image}
-          alt={item.title}
-          fill
-          className="object-contain p-4"
-        />
-      </div>
-
-      <div className="p-4">
-        <h3 className="min-h-[42px] text-sm font-bold leading-snug">
-          {item.title}
-        </h3>
-
-        <p className="mt-2 min-h-[50px] text-xs leading-5 text-[#4b5a4b]">
-          {item.description}
-        </p>
-
-        <a
-          href={item.link}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="mt-4 inline-flex rounded-xl bg-green-800 px-4 py-2 text-xs font-semibold text-white transition hover:bg-green-900"
         >
           {buttonText}
         </a>
@@ -209,7 +192,7 @@ export default function ShopPage() {
           }
 
           .kc-carousel {
-            animation: kcScroll 45s linear infinite;
+            animation: kcScroll 60s linear infinite;
           }
 
           .kc-carousel:hover {
@@ -247,7 +230,7 @@ export default function ShopPage() {
           </p>
         </header>
 
-        <section className="mb-14">
+        <section className="mb-14 rounded-3xl border border-[#d8d2c3] bg-[#fbfaf5] p-6 shadow-sm">
           <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
             <div>
               <h2 className="text-3xl font-bold">Libros destacados</h2>
@@ -264,15 +247,7 @@ export default function ShopPage() {
             </Link>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {books.map((book) => (
-              <ProductCard
-                key={book.title}
-                item={book}
-                buttonText="Ver libro"
-              />
-            ))}
-          </div>
+          <ProductCarousel items={books} buttonText="Ver libro" />
         </section>
 
         <section className="rounded-3xl border border-[#d8d2c3] bg-[#fbfaf5] p-6 shadow-sm">

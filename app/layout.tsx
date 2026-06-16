@@ -49,9 +49,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <SiteHeader />
 
-        <main className="flex-1">
-          {children}
-        </main>
+        <main className="flex-1">{children}</main>
 
         <footer className="border-t border-[#d8d2c3] bg-[#f4f1e8] px-6 py-6">
           <div className="mx-auto max-w-7xl text-center text-sm text-[#4b5a4b]">
@@ -60,7 +58,36 @@ export default function RootLayout({
               Reserved.
             </p>
 
-            <div className="mt-3 flex flex-wrap justify-center gap-6">
+            <div className="mt-4 flex justify-center gap-5 font-semibold">
+              <a
+                href="https://www.facebook.com/kcgreenworks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-800 transition"
+              >
+                Facebook
+              </a>
+
+              <a
+                href="https://www.instagram.com/kcgreenworks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-800 transition"
+              >
+                Instagram
+              </a>
+
+              <a
+                href="https://www.youtube.com/@KCGreenWorks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-800 transition"
+              >
+                YouTube
+              </a>
+            </div>
+
+            <div className="mt-4 flex flex-wrap justify-center gap-6">
               <Link
                 href="/disclaimer"
                 className="hover:text-green-800 transition"
@@ -68,10 +95,7 @@ export default function RootLayout({
                 Disclaimer
               </Link>
 
-              <Link
-                href="/shop"
-                className="hover:text-green-800 transition"
-              >
+              <Link href="/shop" className="hover:text-green-800 transition">
                 Shop
               </Link>
             </div>
