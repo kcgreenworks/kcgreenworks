@@ -58,11 +58,44 @@ export default function SiteHeader() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "18px",
-            fontSize: "15px",
+            gap: "10px",
+            fontSize: "14px",
             fontWeight: 700,
           }}
         >
+          <a
+            href="https://www.facebook.com/kcgreenworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#314232", textDecoration: "none" }}
+          >
+            Facebook
+          </a>
+
+          <span style={{ color: "#8a8678" }}>|</span>
+
+          <a
+            href="https://www.instagram.com/kcgreenworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#314232", textDecoration: "none" }}
+          >
+            Instagram
+          </a>
+
+          <span style={{ color: "#8a8678" }}>|</span>
+
+          <a
+            href="https://www.youtube.com/@KCGreenWorks"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#314232", textDecoration: "none" }}
+          >
+            YouTube
+          </a>
+
+          <span style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
+
           <Link
             href={isEnglish ? "/en/shop" : "/shop"}
             style={{ color: "#314232", textDecoration: "none" }}
@@ -79,6 +112,7 @@ export default function SiteHeader() {
               background: "#ffffff",
               fontSize: "13px",
               fontWeight: 800,
+              marginLeft: "6px",
             }}
           >
             <Link
