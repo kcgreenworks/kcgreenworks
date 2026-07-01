@@ -96,6 +96,20 @@ export default function SiteHeader() {
 
           <span style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
 
+          {/* Enlace dinámico e inteligente: detecta el idioma para enviar a la ruta correcta */}
+          <Link
+            href={isEnglish ? "/en/siembra" : "/siembra"}
+            style={{ 
+              color: "#15803d", 
+              textDecoration: "none",
+              fontWeight: 800 
+            }}
+          >
+            {isEnglish ? "📅 Calendar" : "📅 Calendario"}
+          </Link>
+
+          <span style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
+
           <Link
             href={isEnglish ? "/en/shop" : "/shop"}
             style={{ color: "#314232", textDecoration: "none" }}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Script from "next/script";
+import Link from "next/link"; // Importamos Link para la navegación interna rápida
 
 export default function Home() {
   return (
@@ -20,7 +21,15 @@ export default function Home() {
               compost, lombrices, acuaponía y agricultura en casa sin complicarse.
             </p>
 
+            {/* Bloque de botones reparado con tus enlaces originales y el nuevo calendario */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/siembra"
+                className="rounded-xl bg-green-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-900 shadow-md whitespace-nowrap"
+              >
+                🌿 Calendario de Siembra
+              </Link>
+
               <a
                 href="/blog"
                 className="rounded-xl border border-green-800 px-6 py-3 text-center font-semibold text-green-900 transition hover:bg-green-800 hover:text-white"
@@ -37,6 +46,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Recuperamos tu hermosa imagen de la derecha intacta */}
           <div className="relative">
             <Image
               src="/images/blog/acuaponia/como-construir-acuaponico/kcgreenworks.png"
@@ -50,6 +60,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sección del newsletter */}
       <section className="mx-auto mt-24 max-w-6xl overflow-hidden rounded-[2rem] bg-[#17301f] shadow-2xl">
         <div className="grid items-center gap-8 p-8 md:grid-cols-[1.1fr_0.9fr] md:p-12">
           <div>
@@ -98,6 +109,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sección de últimas publicaciones de Instagram */}
       <section className="mx-auto mt-24 max-w-6xl text-center">
         <h2 className="text-3xl font-bold text-[#1f2a1f] md:text-4xl">
           Últimas publicaciones

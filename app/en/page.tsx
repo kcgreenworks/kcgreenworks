@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Script from "next/script";
+import Link from "next/link"; // Importamos Link para la navegación rápida de Next.js
 
 export default function HomeEN() {
   return (
@@ -21,7 +22,15 @@ export default function HomeEN() {
               and sustainable food production without unnecessary complexity.
             </p>
 
+            {/* Botones actualizados con el calendario en inglés */}
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/en/siembra"
+                className="rounded-xl bg-green-800 px-6 py-3 text-center font-semibold text-white transition hover:bg-green-900 shadow-md whitespace-nowrap"
+              >
+                📅 Planting Calendar
+              </Link>
+
               <a
                 href="/en/blog"
                 className="rounded-xl border border-green-800 px-6 py-3 text-center font-semibold text-green-900 transition hover:bg-green-800 hover:text-white"
