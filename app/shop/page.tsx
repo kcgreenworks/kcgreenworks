@@ -21,25 +21,18 @@ const books = [
     link: "https://a.co/d/04YEWNq2",
   },
   {
-    title: "PECES PARA ACUAPONÍA",
-    description:
-      "Cría, reproducción, alimentación y selección de peces para sistemas acuapónicos.",
-    image: "/images/shop/book4.jpg",
-    link: "https://a.co/d/0dbs9z5j",
-  },
-  {
-    title: "ACUAPONÍA PARA PRINCIPIANTES",
-    description:
-      "Guía práctica para comenzar desde cero con sistemas acuapónicos caseros.",
-    image: "/images/shop/book5.jpg",
-    link: "#",
-  },
-  {
     title: "ACUAPONÍA EN CASA",
     description:
       "La guía completa para construir tu sistema y producir alimentos en casa.",
-    image: "/images/shop/book6.jpg",
+    image: "/images/shop/book4.jpg",
     link: "https://a.co/d/00LlFNKN",
+  },
+  {
+    title: "PECES PARA ACUAPONÍA",
+    description:
+      "Cría, reproducción, alimentación y selección de peces para sistemas acuapónicos.",
+    image: "/images/shop/book6.jpg",
+    link: "https://a.co/d/0dbs9z5j",
   },
 ];
 
@@ -160,17 +153,16 @@ function ProductCarousel({
   items: { title: string; description: string; image: string; link: string }[];
   buttonText: string;
 }) {
-  const loopItems = [...items, ...items];
-
   return (
-    <div className="relative overflow-hidden py-2">
-      <div className="kc-carousel flex w-max gap-5">
-        {loopItems.map((item, index) => (
+    <div className="overflow-x-auto py-2 pb-5 [scrollbar-color:#166534_#e8e4d8]">
+      <div className="flex w-max snap-x snap-mandatory gap-5">
+        {items.map((item) => (
+          <div key={item.title} className="snap-start">
           <CarouselCard
-            key={`${item.title}-${index}`}
             item={item}
             buttonText={buttonText}
           />
+          </div>
         ))}
       </div>
     </div>
@@ -180,27 +172,6 @@ function ProductCarousel({
 export default function ShopPage() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-10 text-[#1f2a1f]">
-      <style>
-        {`
-          @keyframes kcScroll {
-            from {
-              transform: translateX(0);
-            }
-            to {
-              transform: translateX(-50%);
-            }
-          }
-
-          .kc-carousel {
-            animation: kcScroll 60s linear infinite;
-          }
-
-          .kc-carousel:hover {
-            animation-play-state: paused;
-          }
-        `}
-      </style>
-
       <section className="mx-auto max-w-7xl">
         <Link
           href="/"
@@ -237,6 +208,7 @@ export default function ShopPage() {
               <p className="mt-2 text-sm text-[#4b5a4b]">
                 Libros escritos y recomendados por KCGreenWorks.
               </p>
+              <p className="mt-1 text-xs text-[#6b786b]">Desliza horizontalmente para ver más.</p>
             </div>
 
             <Link
@@ -258,6 +230,7 @@ export default function ShopPage() {
                 Productos para acuaponía, hidroponía, compostaje, siembra y
                 jardín.
               </p>
+              <p className="mt-1 text-xs text-[#6b786b]">Desliza horizontalmente para ver más.</p>
             </div>
 
             <Link

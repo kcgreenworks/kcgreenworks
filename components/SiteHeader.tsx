@@ -31,15 +31,7 @@ export default function SiteHeader() {
       }}
     >
       <div
-        style={{
-          maxWidth: "1120px",
-          margin: "0 auto",
-          padding: "18px 32px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: "24px",
-        }}
+        className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:flex-nowrap lg:gap-6 lg:px-8"
       >
         <Link
           href={isEnglish ? "/en" : "/"}
@@ -55,46 +47,18 @@ export default function SiteHeader() {
         </Link>
 
         <nav
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-            fontSize: "14px",
-            fontWeight: 700,
-          }}
+          className="flex w-full flex-wrap items-center gap-2 text-sm font-bold lg:w-auto lg:flex-nowrap lg:gap-2.5"
         >
-          <a
-            href="https://www.facebook.com/kcgreenworks"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#314232", textDecoration: "none" }}
-          >
-            Facebook
-          </a>
-
-          <span style={{ color: "#8a8678" }}>|</span>
-
-          <a
-            href="https://www.instagram.com/kcgreenworks"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#314232", textDecoration: "none" }}
-          >
-            Instagram
-          </a>
-
-          <span style={{ color: "#8a8678" }}>|</span>
-
-          <a
-            href="https://www.youtube.com/@KCGreenWorks"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: "#314232", textDecoration: "none" }}
-          >
-            YouTube
-          </a>
-
-          <span style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
+          <div className="hidden items-center gap-2 lg:flex">
+            <a href="https://www.facebook.com/kcgreenworks" target="_blank" rel="noopener noreferrer" style={{ color: "#314232", textDecoration: "none" }}>Facebook</a>
+            <span style={{ color: "#8a8678" }}>|</span>
+            <a href="https://www.instagram.com/kcgreenworks" target="_blank" rel="noopener noreferrer" style={{ color: "#314232", textDecoration: "none" }}>Instagram</a>
+            <span style={{ color: "#8a8678" }}>|</span>
+            <a href="https://www.youtube.com/@KCGreenWorks" target="_blank" rel="noopener noreferrer" style={{ color: "#314232", textDecoration: "none" }}>YouTube</a>
+            <span style={{ color: "#8a8678" }}>|</span>
+            <a href="https://www.tiktok.com/@kcgreenworks" target="_blank" rel="noopener noreferrer" style={{ color: "#314232", textDecoration: "none" }}>TikTok</a>
+            <span style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
+          </div>
 
           {/* Enlace dinámico e inteligente: detecta el idioma para enviar a la ruta correcta */}
           <Link
@@ -108,7 +72,7 @@ export default function SiteHeader() {
             {isEnglish ? "📅 Calendar" : "📅 Calendario"}
           </Link>
 
-          <span style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
+          <span className="hidden sm:inline" style={{ color: "#8a8678", margin: "0 4px" }}>|</span>
 
           <Link
             href={isEnglish ? "/en/shop" : "/shop"}

@@ -64,17 +64,23 @@ export default async function PaginaMes({ params }: Props) {
         </p>
       </header>
 
-      {/* Imagen de la infografía */}
-      <section className="flex justify-center mb-12 shadow-xl rounded-2xl overflow-hidden bg-white border border-neutral-100">
-        <Image
-          src={datosMes.imagen}
-          alt={`Infografía sobre qué sembrar en ${datosMes.nombre}`}
-          width={1000}
-          height={1000}
-          priority
-          className="w-full h-auto object-cover"
-        />
-      </section>
+      {datosMes.imagen ? (
+        <section className="flex justify-center mb-12 shadow-xl rounded-2xl overflow-hidden bg-white border border-neutral-100">
+          <Image
+            src={datosMes.imagen}
+            alt={`Infografía sobre qué sembrar en ${datosMes.nombre}`}
+            width={1000}
+            height={1000}
+            priority
+            className="w-full h-auto object-cover"
+          />
+        </section>
+      ) : (
+        <section className="mb-12 rounded-2xl border border-green-200 bg-green-50 p-6 text-center text-green-950">
+          <p className="font-semibold">Guía de {datosMes.nombre} actualizada</p>
+          <p className="mt-2 text-sm">Consulta las variedades y recomendaciones prácticas debajo.</p>
+        </section>
+      )}
 
       {/* Transcripción de Texto */}
       <section className="bg-neutral-50 p-6 md:p-8 rounded-2xl border border-neutral-200/60 mb-10">
@@ -119,7 +125,7 @@ export default async function PaginaMes({ params }: Props) {
       {/* Créditos */}
       <footer className="text-center text-xs text-neutral-500 border-t border-neutral-200 pt-6">
         <p className="mb-2">Cultiva Hoy, Cosecha Mañana.</p>
-        <p>Infografía cortesía de <span className="font-semibold">KC Greenworks</span>.</p>
+        <p>Guía preparada por <span className="font-semibold">KC Greenworks</span>.</p>
       </footer>
 
     </article>
