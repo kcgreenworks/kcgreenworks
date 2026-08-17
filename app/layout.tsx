@@ -85,6 +85,15 @@ export default function RootLayout({
               >
                 YouTube
               </a>
+
+              <a
+                href="https://www.tiktok.com/@kcgreenworks"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-green-800 transition"
+              >
+                TikTok
+              </a>
             </div>
 
             <div className="mt-4 flex flex-wrap justify-center gap-6">

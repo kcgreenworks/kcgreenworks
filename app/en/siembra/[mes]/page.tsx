@@ -74,17 +74,23 @@ export default async function PaginaMesEnglish({ params }: Props) {
         </p>
       </header>
 
-      {/* Infographic Image */}
-      <section className="flex justify-center mb-12 shadow-xl rounded-2xl overflow-hidden bg-white border border-neutral-100">
-        <Image
-          src={datosMes.imagenEn} 
-          alt={`Infographic about what to plant in ${datosMes.nombreEn}`}
-          width={1000}
-          height={1000}
-          priority
-          className="w-full h-auto object-cover"
-        />
-      </section>
+      {datosMes.imagenEn ? (
+        <section className="flex justify-center mb-12 shadow-xl rounded-2xl overflow-hidden bg-white border border-neutral-100">
+          <Image
+            src={datosMes.imagenEn}
+            alt={`Infographic about what to plant in ${datosMes.nombreEn}`}
+            width={1000}
+            height={1000}
+            priority
+            className="w-full h-auto object-cover"
+          />
+        </section>
+      ) : (
+        <section className="mb-12 rounded-2xl border border-green-200 bg-green-50 p-6 text-center text-green-950">
+          <p className="font-semibold">Updated {datosMes.nombreEn} guide</p>
+          <p className="mt-2 text-sm">See the recommended varieties and practical guidance below.</p>
+        </section>
+      )}
 
       {/* Dynamic Text Transcription */}
       <section className="bg-neutral-50 p-6 md:p-8 rounded-2xl border border-neutral-200/60 mb-10">
@@ -129,7 +135,7 @@ export default async function PaginaMesEnglish({ params }: Props) {
       {/* Credits */}
       <footer className="text-center text-xs text-neutral-500 border-t border-neutral-200 pt-6">
         <p className="mb-2">Grow Today, Harvest Tomorrow.</p>
-        <p>Infographic courtesy of <span className="font-semibold">KC Greenworks</span>.</p>
+        <p>Guide prepared by <span className="font-semibold">KC Greenworks</span>.</p>
       </footer>
 
     </article>

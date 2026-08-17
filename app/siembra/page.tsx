@@ -1,6 +1,8 @@
 import { redirect } from 'next/navigation';
+import { getCurrentOrLatestMonthSlug } from './data';
+
+export const dynamic = 'force-dynamic';
 
 export default function SiembraPage() {
-  // Cuando alguien entre a /siembra, lo enviará directo a julio
-  redirect('/siembra/julio');
+  redirect(`/siembra/${getCurrentOrLatestMonthSlug()}`);
 }
