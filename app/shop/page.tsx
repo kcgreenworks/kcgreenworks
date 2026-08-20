@@ -3,6 +3,24 @@ import Image from "next/image";
 
 const books = [
   {
+    title: "HUERTO EN CASA",
+    description: "Guía práctica para principiantes: siembra, cuida y cosecha en cualquier espacio.",
+    image: "/images/shop/book7-huerto-en-casa.jpg",
+    link: "https://www.amazon.com/dp/B0H8TFTNLG?tag=kcmarkshop09-20",
+  },
+  {
+    title: "COSECHA ROJA",
+    description: "Aprende a sembrar, cuidar y cosechar tomates en tierra, hidroponía o acuaponía.",
+    image: "/images/shop/book8-cosecha-roja.jpg",
+    link: "https://www.amazon.com/dp/B0HFKZ4P8L?tag=kcmarkshop09-20",
+  },
+  {
+    title: "EL ARTE DE CULTIVAR YERBA BUENA",
+    description: "Cultiva yerba buena en tierra, hidroponía o acuaponía y llévala de la planta a la mesa.",
+    image: "/images/shop/book9-yerba-buena.png",
+    link: "https://www.amazon.com/dp/B0HDV98V67?tag=kcmarkshop09-20",
+  },
+  {
     title: "LOMBRICULTURA EN CASA",
     description: "Sistema de vermicompostaje desde cero.",
     image: "/images/shop/book1.jpg",
@@ -37,6 +55,54 @@ const books = [
 ];
 
 const products = [
+  {
+    title: "LETPOT Smart Hydroponic Garden",
+    description: "Sistema hidropónico inteligente de 12 plantas con luz LED, Wi-Fi y control desde la aplicación.",
+    image: "/images/shop/winner-letpot-hydroponics.jpg",
+    link: "https://www.amazon.com/dp/B0BL3GG6J3?tag=kcmarkshop09-20",
+  },
+  {
+    title: "FCMP Dual-Chamber Composter",
+    description: "Compostera giratoria de doble cámara y 37 galones para producir composta continuamente.",
+    image: "/images/shop/winner-fcmp-composter.jpg",
+    link: "https://www.amazon.com/dp/B009378AG2?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Apera PH20 pH Tester Kit",
+    description: "Medidor de pH impermeable con calibración automática para hidroponía y acuaponía.",
+    image: "/images/shop/winner-apera-ph-meter.jpg",
+    link: "https://www.amazon.com/dp/B01ENFOHN8?tag=kcmarkshop09-20",
+  },
+  {
+    title: "API Freshwater Master Test Kit",
+    description: "Kit completo para medir pH, amoníaco, nitritos y nitratos en sistemas acuapónicos.",
+    image: "/images/shop/winner-api-water-test-kit.jpg",
+    link: "https://www.amazon.com/dp/B000255NCI?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Fiskars Bypass Pruning Shears",
+    description: "Tijeras resistentes y precisas para podar hierbas, vegetales, flores y ramas pequeñas.",
+    image: "/images/shop/winner-fiskars-pruning-shears.jpg",
+    link: "https://www.amazon.com/dp/B00002N66H?tag=kcmarkshop09-20",
+  },
+  {
+    title: "XLUX Soil Moisture Meter",
+    description: "Medidor de humedad de lectura inmediata para evitar el exceso o la falta de riego.",
+    image: "/images/shop/winner-xlux-moisture-meter.jpg",
+    link: "https://www.amazon.com/dp/B014MJ8J2U?tag=kcmarkshop09-20",
+  },
+  {
+    title: "VIVOSUN Seedling Heat Mat",
+    description: "Manta térmica con termostato digital para germinar semillas y fortalecer raíces.",
+    image: "/images/shop/winner-vivosun-heat-mat.jpg",
+    link: "https://www.amazon.com/dp/B016MKY7C8?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Barrina T5 Grow Lights",
+    description: "Juego de ocho luces LED de espectro completo para semilleros y cultivos interiores.",
+    image: "/images/shop/winner-barrina-grow-lights.jpg",
+    link: "https://www.amazon.com/dp/B07V6YJKR6?tag=kcmarkshop09-20",
+  },
   {
     title: "AeroGarden",
     description: "Jardín hidropónico interior con luz LED.",
@@ -153,16 +219,17 @@ function ProductCarousel({
   items: { title: string; description: string; image: string; link: string }[];
   buttonText: string;
 }) {
+  const loopItems = [...items, ...items];
+
   return (
-    <div className="overflow-x-auto py-2 pb-5 [scrollbar-color:#166534_#e8e4d8]">
-      <div className="flex w-max snap-x snap-mandatory gap-5">
-        {items.map((item) => (
-          <div key={item.title} className="snap-start">
+    <div className="relative overflow-hidden py-2">
+      <div className="kc-carousel flex w-max gap-5">
+        {loopItems.map((item, index) => (
           <CarouselCard
+            key={item.title + "-" + index}
             item={item}
             buttonText={buttonText}
           />
-          </div>
         ))}
       </div>
     </div>
@@ -172,6 +239,27 @@ function ProductCarousel({
 export default function ShopPage() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-10 text-[#1f2a1f]">
+      <style>
+        {`
+          @keyframes kcScroll {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(-50%);
+            }
+          }
+
+          .kc-carousel {
+            animation: kcScroll 60s linear infinite;
+          }
+
+          .kc-carousel:hover {
+            animation-play-state: paused;
+          }
+        `}
+      </style>
+
       <section className="mx-auto max-w-7xl">
         <Link
           href="/"
@@ -208,7 +296,6 @@ export default function ShopPage() {
               <p className="mt-2 text-sm text-[#4b5a4b]">
                 Libros escritos y recomendados por KCGreenWorks.
               </p>
-              <p className="mt-1 text-xs text-[#6b786b]">Desliza horizontalmente para ver más.</p>
             </div>
 
             <Link
@@ -230,7 +317,6 @@ export default function ShopPage() {
                 Productos para acuaponía, hidroponía, compostaje, siembra y
                 jardín.
               </p>
-              <p className="mt-1 text-xs text-[#6b786b]">Desliza horizontalmente para ver más.</p>
             </div>
 
             <Link

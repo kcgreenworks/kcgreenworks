@@ -3,6 +3,27 @@ import Image from "next/image";
 
 const books = [
   {
+    title: "HUERTO EN CASA: GUÍA PRÁCTICA PARA PRINCIPIANTES",
+    description:
+      "A clear guide to starting from zero, making use of any space, and learning to plant, care for, and harvest your own food at home.",
+    image: "/images/shop/book7-huerto-en-casa.jpg",
+    link: "https://www.amazon.com/dp/B0H8TFTNLG?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Cosecha Roja: Cómo Sembrar, Cuidar y Cosechar Tomates",
+    description:
+      "Grow tomatoes in soil, hydroponic, or aquaponic systems, from sowing through a healthy harvest.",
+    image: "/images/shop/book8-cosecha-roja.jpg",
+    link: "https://www.amazon.com/dp/B0HFKZ4P8L?tag=kcmarkshop09-20",
+  },
+  {
+    title: "El Arte de Cultivar Yerba Buena: De la Planta a la Mesa",
+    description:
+      "A practical guide to growing yerba buena in soil, hydroponics, and aquaponics and enjoying it every day.",
+    image: "/images/shop/book9-yerba-buena.png",
+    link: "https://www.amazon.com/dp/B0HDV98V67?tag=kcmarkshop09-20",
+  },
+  {
     title: "WORM FARMING AT HOME: HOW I BUILT MY OWN VERMICOMPOST SYSTEM FROM SCRATCH",
     description:
       "Learn step by step how to build and maintain a home worm farming system, produce high-quality worm castings, and transform organic waste into natural fertilizer.",
