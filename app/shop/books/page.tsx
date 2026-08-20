@@ -3,6 +3,27 @@ import Image from "next/image";
 
 const books = [
   {
+    title: "HUERTO EN CASA: GUÍA PRÁCTICA PARA PRINCIPIANTES",
+    description:
+      "Una guía clara para comenzar desde cero, aprovechar cualquier espacio y aprender a sembrar, cuidar y cosechar tus propios alimentos en casa.",
+    image: "/images/shop/book7-huerto-en-casa.jpg",
+    link: "https://www.amazon.com/dp/B0H8TFTNLG?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Cosecha Roja: Cómo Sembrar, Cuidar y Cosechar Tomates",
+    description:
+      "Construye tu propio sistema para cultivar tomates en tierra, hidroponía o acuaponía, desde la siembra hasta una cosecha saludable.",
+    image: "/images/shop/book8-cosecha-roja.jpg",
+    link: "https://www.amazon.com/dp/B0HFKZ4P8L?tag=kcmarkshop09-20",
+  },
+  {
+    title: "El Arte de Cultivar Yerba Buena: De la Planta a la Mesa",
+    description:
+      "Guía práctica para cultivar yerba buena en tierra, hidroponía y acuaponía, aprovechar sus beneficios y disfrutarla cada día.",
+    image: "/images/shop/book9-yerba-buena.png",
+    link: "https://www.amazon.com/dp/B0HDV98V67?tag=kcmarkshop09-20",
+  },
+  {
     title:
       "LOMBRICULTURA EN CASA: COMO CONSTRUI MI PROPIO SISTEMA DE VERMICOMPOSTAJE DESDE CERO",
     description:

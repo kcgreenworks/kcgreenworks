@@ -3,6 +3,24 @@ import Image from "next/image";
 
 const books = [
   {
+    title: "HUERTO EN CASA",
+    description: "A practical beginner's guide to planting, caring for, and harvesting food in any space.",
+    image: "/images/shop/book7-huerto-en-casa.jpg",
+    link: "https://www.amazon.com/dp/B0H8TFTNLG?tag=kcmarkshop09-20",
+  },
+  {
+    title: "COSECHA ROJA",
+    description: "Learn to grow and harvest tomatoes in soil, hydroponic, or aquaponic systems.",
+    image: "/images/shop/book8-cosecha-roja.jpg",
+    link: "https://www.amazon.com/dp/B0HFKZ4P8L?tag=kcmarkshop09-20",
+  },
+  {
+    title: "EL ARTE DE CULTIVAR YERBA BUENA",
+    description: "Grow yerba buena in soil, hydroponics, or aquaponics and bring it from plant to table.",
+    image: "/images/shop/book9-yerba-buena.png",
+    link: "https://www.amazon.com/dp/B0HDV98V67?tag=kcmarkshop09-20",
+  },
+  {
     title: "VERMICOMPOSTING AT HOME",
     description: "Build your own vermicomposting system from scratch.",
     image: "/images/shop/book1.jpg",
@@ -42,6 +60,54 @@ const books = [
 ];
 
 const products = [
+  {
+    title: "LETPOT Smart Hydroponic Garden",
+    description: "12-pod smart indoor hydroponic garden with LED grow light, Wi-Fi and app control.",
+    image: "/images/shop/winner-letpot-hydroponics.jpg",
+    link: "https://www.amazon.com/dp/B0BL3GG6J3?tag=kcmarkshop09-20",
+  },
+  {
+    title: "FCMP Dual-Chamber Composter",
+    description: "37-gallon rotating dual-chamber composter for continuous batches of finished compost.",
+    image: "/images/shop/winner-fcmp-composter.jpg",
+    link: "https://www.amazon.com/dp/B009378AG2?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Apera PH20 pH Tester Kit",
+    description: "Waterproof pH tester with automatic calibration for hydroponic and aquaponic systems.",
+    image: "/images/shop/winner-apera-ph-meter.jpg",
+    link: "https://www.amazon.com/dp/B01ENFOHN8?tag=kcmarkshop09-20",
+  },
+  {
+    title: "API Freshwater Master Test Kit",
+    description: "Complete water test kit for pH, ammonia, nitrite and nitrate control in aquaponic systems.",
+    image: "/images/shop/winner-api-water-test-kit.jpg",
+    link: "https://www.amazon.com/dp/B000255NCI?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Fiskars Bypass Pruning Shears",
+    description: "Durable precision pruning shears for herbs, vegetables, flowers and small branches.",
+    image: "/images/shop/winner-fiskars-pruning-shears.jpg",
+    link: "https://www.amazon.com/dp/B00002N66H?tag=kcmarkshop09-20",
+  },
+  {
+    title: "XLUX Soil Moisture Meter",
+    description: "Instant soil moisture readings to help prevent overwatering and underwatering.",
+    image: "/images/shop/winner-xlux-moisture-meter.jpg",
+    link: "https://www.amazon.com/dp/B014MJ8J2U?tag=kcmarkshop09-20",
+  },
+  {
+    title: "VIVOSUN Seedling Heat Mat",
+    description: "Seedling heat mat with digital thermostat for germination and stronger root development.",
+    image: "/images/shop/winner-vivosun-heat-mat.jpg",
+    link: "https://www.amazon.com/dp/B016MKY7C8?tag=kcmarkshop09-20",
+  },
+  {
+    title: "Barrina T5 Grow Lights",
+    description: "Eight full-spectrum LED grow-light strips for seedlings and indoor growing shelves.",
+    image: "/images/shop/winner-barrina-grow-lights.jpg",
+    link: "https://www.amazon.com/dp/B07V6YJKR6?tag=kcmarkshop09-20",
+  },
   {
     title: "AeroGarden",
     description: "Indoor hydroponic garden with LED grow light.",
