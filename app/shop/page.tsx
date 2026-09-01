@@ -20,6 +20,13 @@ type Product = {
   note: string;
 };
 
+type Book = {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+};
+
 /**
  * Déjalo vacío hasta que Amazon apruebe la nueva solicitud.
  * Después, coloca aquí el nuevo Associates ID para añadirlo a todos los enlaces.
@@ -35,6 +42,57 @@ function amazonLink(path: string) {
 
   return url.toString();
 }
+
+const books: Book[] = [
+  {
+    title: "Huerto en Casa",
+    description: "Guía práctica para comenzar desde cero, sembrar, cuidar y cosechar alimentos en cualquier espacio.",
+    image: "/images/shop/book7-huerto-en-casa.jpg",
+    link: amazonLink("/dp/B0H8TFTNLG"),
+  },
+  {
+    title: "Cosecha Roja",
+    description: "Cómo sembrar, cuidar y cosechar tomates en tierra, hidroponía o acuaponía.",
+    image: "/images/shop/book8-cosecha-roja.jpg",
+    link: amazonLink("/dp/B0HFKZ4P8L"),
+  },
+  {
+    title: "El Arte de Cultivar Yerba Buena",
+    description: "Una guía para cultivar yerba buena y llevarla de la planta a la mesa.",
+    image: "/images/shop/book9-yerba-buena.png",
+    link: amazonLink("/dp/B0HDV98V67"),
+  },
+  {
+    title: "Lombricultura en Casa",
+    description: "Construye y mantén tu propio sistema de vermicompostaje desde cero.",
+    image: "/images/shop/book1.jpg",
+    link: amazonLink("/dp/B0H24D725B"),
+  },
+  {
+    title: "Acuaponía",
+    description: "La guía completa para avanzar desde cero hasta tu primera cosecha.",
+    image: "/images/shop/book2.jpg",
+    link: "https://a.co/d/0gRcplww",
+  },
+  {
+    title: "La Lombriz al Descubierto",
+    description: "Biología, alimentación, reproducción y lombricultura práctica en una sola guía.",
+    image: "/images/shop/book3.jpg",
+    link: "https://a.co/d/04YEWNq2",
+  },
+  {
+    title: "Acuaponía en Casa",
+    description: "Construye un sistema funcional y aprende a producir alimentos en casa.",
+    image: "/images/shop/book4.jpg",
+    link: "https://a.co/d/00LlFNKN",
+  },
+  {
+    title: "Peces para Acuaponía",
+    description: "Elige, alimenta y cuida peces para mantener un sistema acuapónico saludable.",
+    image: "/images/shop/book6.jpg",
+    link: "https://a.co/d/0dbs9z5j",
+  },
+];
 
 const products: Product[] = [
   {
@@ -232,6 +290,35 @@ function ProductCard({ product }: { product: Product }) {
   );
 }
 
+function BookCard({ book }: { book: Book }) {
+  return (
+    <article className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-[#d8d2c3] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+      <div className="relative h-80 overflow-hidden bg-[#e7eee2] sm:h-96">
+        <Image
+          src={book.image}
+          alt={`Portada de ${book.title}`}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className="object-contain p-5 transition duration-500 group-hover:scale-[1.025]"
+        />
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="text-xl font-black leading-tight text-[#19331f]">{book.title}</h3>
+        <p className="mt-3 flex-1 text-sm leading-6 text-[#526052]">{book.description}</p>
+        <a
+          href={book.link}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          aria-label={`Ver ${book.title} en Amazon (abre en otra pestaña)`}
+          className="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-green-800 px-4 py-3 text-center text-sm font-extrabold text-white transition hover:bg-green-950 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
+        >
+          Ver libro en Amazon <span className="ml-2" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </article>
+  );
+}
+
 export default function ShopPage() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f]">
@@ -251,8 +338,14 @@ export default function ShopPage() {
                 Productos que uso y recomiendo
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#e6efe8] md:text-xl">
-                Diez herramientas que resuelven problemas reales del huerto, la germinación, la lombricultura y la acuaponía. Te cuento qué aportan y cuándo sí vale la pena considerarlas.
+                Mis libros y diez herramientas que resuelven problemas reales del huerto, la germinación, la lombricultura y la acuaponía. Te cuento qué aportan y cuándo sí vale la pena considerarlas.
               </p>
+              <a
+                href="#libros"
+                className="mt-7 inline-flex min-h-12 items-center justify-center rounded-xl bg-[#e8c75e] px-6 py-3 text-sm font-black text-[#173f2a] transition hover:bg-[#f3d87e] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#173f2a]"
+              >
+                Ver mis libros <span className="ml-2" aria-hidden="true">↓</span>
+              </a>
             </div>
 
             <div className="relative mt-9 max-w-3xl rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-sm">
@@ -262,6 +355,30 @@ export default function ShopPage() {
               </p>
             </div>
           </header>
+        </div>
+      </section>
+
+      <section id="libros" className="scroll-mt-24 px-5 pb-12 sm:px-6 md:pb-16">
+        <div className="mx-auto max-w-7xl rounded-[2rem] border border-[#d8d2c3] bg-[#fffdf7] p-5 shadow-sm sm:p-8">
+          <div className="mb-7 flex flex-col gap-4 border-b border-[#d8d2c3] pb-6 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-green-800">Biblioteca KCGreenWorks</p>
+              <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] sm:text-4xl">Mis libros</h2>
+              <p className="mt-3 max-w-2xl leading-7 text-[#526052]">
+                Guías escritas desde la experiencia para ayudarte a cultivar, criar lombrices y comenzar en acuaponía con una base clara.
+              </p>
+            </div>
+            <Link
+              href="/shop/books"
+              className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-xl border border-green-800 px-5 py-3 text-sm font-extrabold text-green-900 transition hover:bg-green-800 hover:text-white"
+            >
+              Ver biblioteca completa
+            </Link>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {books.map((book) => <BookCard key={book.title} book={book} />)}
+          </div>
         </div>
       </section>
 
