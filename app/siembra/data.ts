@@ -69,6 +69,32 @@ export const infoMeses: Record<string, MesData> = {
       "Plant in a location with good drainage during periods of rain.",
       "Observe your plants frequently and enjoy growing your own food."
     ]
+  },
+  septiembre: {
+    nombre: "Septiembre",
+    nombreEn: "September",
+    slug: "septiembre",
+    descripcion: "Septiembre abre la temporada de otoño y permite comenzar una nueva cosecha en Puerto Rico y Florida. Elige variedades adaptadas a tu zona y protege los semilleros de las lluvias fuertes.",
+    descripcionEn: "September opens the fall growing season in Puerto Rico and Florida. Choose varieties suited to your area and protect young seedlings from heavy rain.",
+    imagen: "/images/meses/septiembre.png",
+    hojasHierbas: ["Lechuga", "Col rizada", "Acelga", "Cilantro"],
+    hojasHierbasEn: ["Lettuce", "Kale", "Swiss chard", "Cilantro"],
+    vegetales: ["Tomate", "Pimiento", "Berenjena", "Pepino", "Habichuelas (Ejotes)"],
+    vegetalesEn: ["Tomato", "Pepper", "Eggplant", "Cucumber", "Green beans"],
+    raicesOtros: ["Zanahoria", "Rábano", "Cebollín"],
+    raicesOtrosEn: ["Carrot", "Radish", "Scallions"],
+    tips: [
+      "Siembra por etapas para extender la cosecha y no tener todo listo al mismo tiempo.",
+      "Mejora el drenaje del suelo antes de los periodos de lluvia intensa.",
+      "Protege los semilleros de los aguaceros y del sol fuerte del mediodía.",
+      "Revisa las recomendaciones de tu zona: el calendario cambia entre el norte, centro y sur de Florida."
+    ],
+    tipsEn: [
+      "Plant in stages to extend the harvest instead of having everything mature at once.",
+      "Improve soil drainage before periods of heavy rain.",
+      "Protect seed trays from downpours and strong midday sun.",
+      "Check guidance for your area because planting dates vary across North, Central and South Florida."
+    ]
   }
 };
 
