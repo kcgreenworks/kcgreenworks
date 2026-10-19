@@ -16,9 +16,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KCGreenWorks",
+  metadataBase: new URL("https://www.kcgreenworks.com"),
+  title: {
+    default: "KCGreenWorks | Huertos, Lombricultura y Acuaponía en Casa",
+    template: "%s | KCGreenWorks",
+  },
   description:
-    "Practical home gardening, aquaponics and worm composting guides.",
+    "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarse.",
+  openGraph: {
+    type: "website",
+    locale: "es_PR",
+    siteName: "KCGreenWorks",
+    title: "KCGreenWorks | Huertos, Lombricultura y Acuaponía en Casa",
+    description:
+      "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarte.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "KCGreenWorks | Huertos, Lombricultura y Acuaponía en Casa",
+    description:
+      "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarte.",
+  },
 };
 
 export default function RootLayout({
@@ -28,7 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
