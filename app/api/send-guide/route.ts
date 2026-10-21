@@ -66,20 +66,20 @@ export async function POST(request: Request) {
         sender: { name: "KCGreenWorks", email: senderEmail },
         to: [{ email }],
         subject: isEnglish
-          ? "Your free KCGreenWorks guide"
-          : "Tu guía gratuita de KCGreenWorks",
+          ? "Your free guide: Tu Primer Huerto en Casa"
+          : "Tu guía gratuita: Tu Primer Huerto en Casa",
         htmlContent: isEnglish
           ? `
             <div style="font-family:Arial,sans-serif;padding:24px;color:#17301f">
-              <h2>Thank you for joining KCGreenWorks!</h2>
-              <p>Your free guide is ready. Use the button below to download it.</p>
+              <h2>Your free guide “Tu Primer Huerto en Casa” is ready!</h2>
+              <p>Thank you for joining KCGreenWorks. Use the button below to download it.</p>
               <p style="margin-top:24px"><a href="${guideUrl}" style="background:#17301f;color:#fff;padding:12px 24px;text-decoration:none;border-radius:8px;font-weight:bold">Download the PDF guide</a></p>
               <p style="margin-top:24px;font-size:13px;color:#59685b">You are receiving this message because you requested the guide at KCGreenWorks.</p>
             </div>`
           : `
             <div style="font-family:Arial,sans-serif;padding:24px;color:#17301f">
-              <h2>¡Gracias por unirte a KCGreenWorks!</h2>
-              <p>Tu guía gratuita está lista. Usa el botón para descargarla.</p>
+              <h2>¡Tu guía “Tu Primer Huerto en Casa” está lista!</h2>
+              <p>Gracias por unirte a KCGreenWorks. Usa el botón para descargarla.</p>
               <p style="margin-top:24px"><a href="${guideUrl}" style="background:#17301f;color:#fff;padding:12px 24px;text-decoration:none;border-radius:8px;font-weight:bold">Descargar la guía en PDF</a></p>
               <p style="margin-top:24px;font-size:13px;color:#59685b">Recibes este mensaje porque solicitaste la guía en KCGreenWorks.</p>
             </div>`,

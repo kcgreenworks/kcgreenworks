@@ -24,7 +24,7 @@ export const infoMeses: Record<string, MesData> = {
     descripcion: "Julio es un mes perfecto para cultivar en Puerto Rico y Florida. El calor y las lluvias frecuentes crean las condiciones ideales para cosechas abundantes y sabrosas.",
     descripcionEn: "July is a perfect month to grow in Puerto Rico and Florida. The intense heat and frequent rains create the ideal conditions for abundant and flavorful harvests.",
     imagen: "/images/meses/julio.png",
-    imagenEn: "/images/meses/july.png", 
+    imagenEn: "/images/meses/july.png",
     hojasHierbas: ["Albahaca", "Cilantro", "Perejil", "Espinaca", "Lechuga", "Acelga", "Repollo", "Rúcula", "Berro", "Cebollín"],
     hojasHierbasEn: ["Basil", "Cilantro", "Parsley", "Spinach", "Lettuce", "Swiss Chard", "Cabbage", "Arugula", "Watercress", "Chives"],
     vegetales: ["Tomate", "Pimientos", "Pepino", "Okra", "Habichuelas (Ejotes)", "Berenjena", "Calabaza", "Zanahoria", "Remolacha"],
@@ -94,6 +94,34 @@ export const infoMeses: Record<string, MesData> = {
       "Improve soil drainage before periods of heavy rain.",
       "Protect seed trays from downpours and strong midday sun.",
       "Check guidance for your area because planting dates vary across North, Central and South Florida."
+    ]
+  },
+  octubre: {
+    nombre: "Octubre",
+    nombreEn: "October",
+    slug: "octubre",
+    descripcion: "Octubre es el corazón de la temporada de otoño en Puerto Rico y Florida. Con temperaturas más frescas y menos lluvia, es el mejor momento para sembrar hojas verdes, trasplantar tomates de otoño y sembrar raíces directo en el suelo.",
+    descripcionEn: "October is the heart of the fall growing season in Puerto Rico and Florida. With cooler temperatures and less rain, it's the best time to plant leafy greens, transplant fall tomatoes, and direct-sow root crops.",
+    imagen: "/images/meses/octubre.png",
+    hojasHierbas: ["Lechuga", "Espinaca", "Acelga", "Col rizada", "Rúcula", "Cilantro", "Perejil", "Cebollín", "Mostaza", "Berro"],
+    hojasHierbasEn: ["Lettuce", "Spinach", "Swiss Chard", "Kale", "Arugula", "Cilantro", "Parsley", "Chives", "Mustard Greens", "Watercress"],
+    vegetales: ["Tomate", "Pimiento", "Berenjena", "Habichuelas (Ejotes)", "Pepino"],
+    vegetalesEn: ["Tomato", "Pepper", "Eggplant", "Green Beans", "Cucumber"],
+    raicesOtros: ["Zanahoria", "Rábano", "Remolacha", "Nabo", "Cebolla", "Ajo"],
+    raicesOtrosEn: ["Carrot", "Radish", "Beets", "Turnip", "Onion", "Garlic"],
+    tips: [
+      "Aprovecha el clima más fresco: es el mejor momento para trasplantar.",
+      "Siembra zanahoria y rábano directo en suelo suelto y bien drenado.",
+      "Reduce el riego: con menos calor y menos lluvia el suelo retiene más humedad.",
+      "Vigila orugas y gusanos cogolleros, que aparecen mucho en otoño.",
+      "Usa mulch para conservar la humedad y mantener estable la temperatura del suelo."
+    ],
+    tipsEn: [
+      "Take advantage of cooler weather: it's the best time for transplants.",
+      "Direct-sow carrots and radishes in loose, well-drained soil.",
+      "Water less: with lower heat and less rain, soil holds moisture longer.",
+      "Watch for caterpillars and armyworms, common in the fall.",
+      "Use mulch to conserve moisture and keep soil temperature stable."
     ]
   }
 };

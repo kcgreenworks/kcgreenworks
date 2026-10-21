@@ -121,12 +121,14 @@ export default async function Home({ searchParams }: HomeProps) {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl">
-              Aprende conmigo lo que voy probando en el huerto, las lombrices y la acuaponía.
+              Descarga gratis mi guía: Tu Primer Huerto en Casa
             </h2>
 
             <p className="mt-4 max-w-2xl text-lg leading-8 text-green-100">
-              Te envío consejos prácticos, errores que he cometido y guías reales
-              para cultivar mejor sin complicarte.
+              Aprende a sembrar en casa sin complicarte: qué sembrar, cuándo
+              hacerlo y cómo evitar los errores que yo ya cometí. Además
+              recibes consejos prácticos de lo que voy probando en el huerto,
+              las lombrices y la acuaponía.
             </p>
           </div>
 
@@ -163,14 +165,14 @@ export default async function Home({ searchParams }: HomeProps) {
 
             <label className="mt-4 flex items-start gap-3 text-left text-xs leading-5 text-gray-600">
               <input type="checkbox" name="consent" value="yes" required className="mt-1 size-4 accent-green-800" />
-              <span>Acepto recibir la guía y contenido útil de KCGreenWorks por correo electrónico.</span>
+              <span>Acepto recibir la guía “Tu Primer Huerto en Casa” y contenido útil de KCGreenWorks por correo electrónico.</span>
             </label>
 
             <button
               type="submit"
               className="mt-4 w-full rounded-xl bg-[#c7e86b] px-6 py-3 font-bold text-[#17301f] transition hover:bg-[#b5d957]"
             >
-              Recibir Guía Gratis en PDF 🎁
+              Quiero mi guía gratis 🎁
             </button>
 
             <p className="mt-3 text-center text-xs text-gray-500">
