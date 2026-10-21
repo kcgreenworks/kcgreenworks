@@ -28,10 +28,10 @@ type Book = {
 };
 
 /**
- * Déjalo vacío hasta que Amazon apruebe la nueva solicitud.
- * Después, coloca aquí el nuevo Associates ID para añadirlo a todos los enlaces.
+ * Amazon Associates ID de KCGreenWorks (solicitud aprobada el 2026-10-21).
+ * Se añade automáticamente como ?tag= a todos los enlaces de Amazon de la tienda.
  */
-const AMAZON_ASSOCIATES_ID = "";
+const AMAZON_ASSOCIATES_ID = "kcgreenworks-20";
 
 function amazonLink(path: string) {
   const url = new URL(path, "https://www.amazon.com");
@@ -453,7 +453,7 @@ export default function ShopPage() {
           <div className="rounded-2xl border border-white/20 bg-white/10 p-6 text-sm leading-6 text-[#e6efe8]">
             <p className="font-extrabold text-white">Transparencia</p>
             <p className="mt-2">
-              Esta selección es editorial. La posibilidad de recibir una comisión no cambia el precio para ti ni sustituye tu propia evaluación del producto. Precios y disponibilidad pueden cambiar en Amazon.
+              KCGreenWorks participa en el Programa de Afiliados de Amazon: como Afiliado de Amazon, ganamos una comisión por las compras calificadas hechas desde los enlaces de esta página, sin costo extra para ti. Esta selección es editorial; la comisión no cambia el precio ni sustituye tu propia evaluación del producto. Precios y disponibilidad pueden cambiar en Amazon.
             </p>
           </div>
         </div>
