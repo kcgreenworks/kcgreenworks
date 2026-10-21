@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Productos que uso y recomiendo | KCGreenWorks",
+  title: "Productos que uso y recomiendo",
   description:
     "Una selección razonada de herramientas para huerto, germinación, lombricultura y acuaponía, con consejos para elegir mejor.",
 };

@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog: huertos, lombricultura y acuaponía",
+  description:
+    "Artículos y guías prácticas de KCGreenWorks: huertos en casa, lombricultura, acuaponía y siembra sostenible, explicados paso a paso y sin complicaciones.",
+};
+
 export default function Blog() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">
