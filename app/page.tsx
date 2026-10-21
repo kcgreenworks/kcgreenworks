@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Script from "next/script";
 import Link from "next/link";
 import VideosSection from "@/components/VideosSection";
 
@@ -70,46 +69,70 @@ export default async function Home({ searchParams }: HomeProps) {
       {/* Sección de videos: serie "De residuo a recurso" */}
       <VideosSection />
 
-      {/* Sección de últimas publicaciones de Instagram */}
-      <section className="mx-auto mt-20 max-w-6xl text-center">
-        <h2 className="text-3xl font-bold text-[#1f2a1f] md:text-4xl">
-          Últimas publicaciones
-        </h2>
+      {/* Sección "Empieza por aquí": contenido propio que nunca vence */}
+      <section className="mx-auto mt-20 max-w-6xl">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-[#1f2a1f] md:text-4xl">
+            Empieza por aquí
+          </h2>
 
-        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-[#4b5a4b]">
-          Síguenos en Instagram para más contenido sobre huertos, vermicompostaje y acuaponía.
-        </p>
-
-        <div className="mx-auto mt-10 max-w-5xl overflow-hidden rounded-3xl border border-[#d8d2c3] bg-white shadow-lg">
-          <div
-            className="elfsight-app-9c15b5ae-f9cc-4986-acd6-adcf543d3653"
-            data-elfsight-app-lazy
-          ></div>
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-[#4b5a4b]">
+            Las tres guías con las que todo el mundo arranca en KCGreenWorks.
+          </p>
         </div>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a
-            href="https://www.instagram.com/kcgreenworks"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex rounded-xl border border-green-800 px-6 py-3 font-semibold text-green-900 transition hover:bg-green-800 hover:text-white"
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <Link
+            href="/blog/lombricultura"
+            className="group rounded-3xl border border-[#d8d2c3] bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
           >
-            Ver publicaciones en Instagram
-          </a>
-          <a
-            href="https://www.tiktok.com/@kcgreenworks"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex rounded-xl bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900"
-          >
-            Ver TikTok
-          </a>
-        </div>
+            <div className="text-4xl">🪱</div>
+            <h3 className="mt-4 text-xl font-bold text-[#1f2a1f]">
+              Guía de lombricultura
+            </h3>
+            <p className="mt-2 leading-7 text-[#4b5a4b]">
+              Lombriz roja, vermicompostera, humus y lixiviado: la guía
+              completa, paso a paso y sin complicaciones.
+            </p>
+            <span className="mt-4 inline-block font-semibold text-green-800 group-hover:underline">
+              Ver la guía →
+            </span>
+          </Link>
 
-        <Script
-          src="https://elfsightcdn.com/platform.js"
-          strategy="afterInteractive"
-        />
+          <Link
+            href="/siembra"
+            className="group rounded-3xl border border-[#d8d2c3] bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
+          >
+            <div className="text-4xl">🌿</div>
+            <h3 className="mt-4 text-xl font-bold text-[#1f2a1f]">
+              Calendario de siembra
+            </h3>
+            <p className="mt-2 leading-7 text-[#4b5a4b]">
+              Qué sembrar este mes en Puerto Rico y Florida: hojas,
+              vegetales y raíces según la temporada.
+            </p>
+            <span className="mt-4 inline-block font-semibold text-green-800 group-hover:underline">
+              Ver este mes →
+            </span>
+          </Link>
+
+          <Link
+            href="/blog"
+            className="group rounded-3xl border border-[#d8d2c3] bg-white p-8 shadow-lg transition hover:-translate-y-1 hover:shadow-xl"
+          >
+            <div className="text-4xl">📚</div>
+            <h3 className="mt-4 text-xl font-bold text-[#1f2a1f]">
+              Todas las guías
+            </h3>
+            <p className="mt-2 leading-7 text-[#4b5a4b]">
+              Huertos, lombricultura y acuaponía explicados por
+              categoría, para que encuentres justo lo que buscas.
+            </p>
+            <span className="mt-4 inline-block font-semibold text-green-800 group-hover:underline">
+              Explorar guías →
+            </span>
+          </Link>
+        </div>
       </section>
 
       {/* Sección del newsletter / Captura de correos */}
