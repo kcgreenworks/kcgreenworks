@@ -123,6 +123,34 @@ export const infoMeses: Record<string, MesData> = {
       "Watch for caterpillars and armyworms, common in the fall.",
       "Use mulch to conserve moisture and keep soil temperature stable."
     ]
+  },
+  noviembre: {
+    nombre: "Noviembre",
+    nombreEn: "November",
+    slug: "noviembre",
+    descripcion: "Noviembre cierra la temporada de otoño en Puerto Rico y Florida. Las noches más frescas favorecen las crucíferas y las hojas verdes, es el momento de sembrar las raíces de invierno y en Florida conviene empezar a vigilar las primeras noches frías.",
+    descripcionEn: "November closes the fall season in Puerto Rico and Florida. Cooler nights favor brassicas and leafy greens, it's time to sow winter root crops, and in Florida you should start watching for the first cold nights.",
+    imagen: "/images/meses/noviembre.png",
+    hojasHierbas: ["Lechuga", "Espinaca", "Acelga", "Col rizada", "Col berza", "Rúcula", "Cilantro", "Perejil", "Cebollín", "Mostaza"],
+    hojasHierbasEn: ["Lettuce", "Spinach", "Swiss Chard", "Kale", "Collard Greens", "Arugula", "Cilantro", "Parsley", "Chives", "Mustard Greens"],
+    vegetales: ["Brócoli", "Coliflor", "Repollo", "Tomate", "Pimiento", "Habichuelas (Ejotes)", "Pepino", "Calabaza"],
+    vegetalesEn: ["Broccoli", "Cauliflower", "Cabbage", "Tomato", "Pepper", "Green Beans", "Cucumber", "Pumpkin/Squash"],
+    raicesOtros: ["Zanahoria", "Rábano", "Remolacha", "Nabo", "Cebolla", "Ajo", "Papa"],
+    raicesOtrosEn: ["Carrot", "Radish", "Beets", "Turnip", "Onion", "Garlic", "Potato"],
+    tips: [
+      "Es el mes de las crucíferas: trasplanta brócoli, coliflor y repollo aprovechando el clima fresco.",
+      "Siembra zanahoria, rábano y remolacha directo en el suelo: germinan mejor con las noches frescas.",
+      "En Florida, ten cubiertas o mantas de huerto a mano por si llega una noche fría de golpe.",
+      "Reduce el riego: con noches frescas el suelo conserva la humedad por más tiempo.",
+      "Vigila las orugas en brócoli y repollo: siguen activas en noviembre y se controlan con red o Bt orgánico."
+    ],
+    tipsEn: [
+      "It's brassica month: transplant broccoli, cauliflower and cabbage while the weather is cool.",
+      "Direct-sow carrots, radishes and beets: they germinate better with cool nights.",
+      "In Florida, keep row covers or frost blankets handy in case a cold night arrives suddenly.",
+      "Water less: cool nights help the soil hold moisture longer.",
+      "Watch for caterpillars on broccoli and cabbage: they stay active in November and can be controlled with netting or organic Bt."
+    ]
   }
 };
 
