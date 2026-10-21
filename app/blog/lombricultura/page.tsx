@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Guías de lombricultura y vermicompost",
+  description:
+    "Todo sobre lombricultura en casa: cómo criar lombriz roja, montar tu vermicompostera, producir humus y lixiviado, y aprovecharlo en tu huerto.",
+};
 
 export default function Lombricultura() {
   return (
