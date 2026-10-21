@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Acuaponía básica: guía completa desde cero",
+  description:
+    "Guía completa de acuaponía para principiantes: cómo funciona el sistema, qué necesitas para empezar y los errores que debes evitar, explicado desde la experiencia.",
+};
+
 export default function GuiaAcuaponia() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">

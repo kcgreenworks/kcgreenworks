@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Zucchini (calabacín): guía completa de siembra",
+  description:
+    "Zucchini desde la semilla hasta la cosecha: siembra, cuidados, polinización y cosecha, con todo lo aprendido cultivándolo año tras año.",
+};
+
 export default function ZucchiniGuia() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">

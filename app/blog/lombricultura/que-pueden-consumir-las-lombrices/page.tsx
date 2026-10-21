@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Qué comen las lombrices: guía de alimentación",
+  description:
+    "Qué les doy de comer a mis lombrices y por qué funciona: los residuos que sí convierten en composta, los que debes evitar y cómo lo hacen.",
+};
+
 export default function QuePuedenConsumirLasLombrices() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">

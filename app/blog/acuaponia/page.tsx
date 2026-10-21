@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Guías de acuaponía: sistemas caseros paso a paso",
+  description:
+    "Guías sobre sistemas acuapónicos, cultivo sin suelo, integración de peces y plantas, y cómo crear sistemas productivos en casa.",
+};
+
 export default function Acuaponia() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">
