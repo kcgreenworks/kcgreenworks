@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Cómo construir un sistema acuapónico casero barato | KCGreenWorks",
+  title: "Cómo construir un sistema acuapónico casero barato",
   description:
     "Aprende cómo hacer un sistema acuapónico casero barato, contado desde la experiencia real con peces, plantas, bacterias, bomba de agua y cama de cultivo.",
 };

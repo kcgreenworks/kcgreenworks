@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tomate Black Cherry: cómo sembrarlo y cuidarlo",
+  description:
+    "Cómo sembré tomates Black Cherry y lo que aprendí en el proceso: siembra, tutorado, cuidados y por qué se convirtió en uno de mis tomates favoritos.",
+};
+
 export default function Page() {
   return (
     <div className="max-w-3xl mx-auto p-6">

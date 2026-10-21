@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Cómo hacer una vermicompostera casera paso a paso | KCGreenWorks",
+  title: "Cómo hacer una vermicompostera casera paso a paso",
   description:
     "Aprende a crear una vermicompostera casera paso a paso y convierte residuos orgánicos en humus natural para tus plantas.",
 };

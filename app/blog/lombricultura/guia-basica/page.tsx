@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Lombricultura: guía completa desde la experiencia",
+  description:
+    "Todo sobre lombricultura tras criar miles de lombrices: cómo empezar, qué comen, cómo multiplicarlas y cómo cosechar humus de calidad en casa.",
+};
+
 export default function GuiaLombricultura() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">

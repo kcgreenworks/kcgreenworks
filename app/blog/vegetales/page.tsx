@@ -1,5 +1,14 @@
 import Link from "next/link";
 
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Vegetales: guías para sembrar en casa",
+  description:
+    "Guías organizadas sobre vegetales para sembrar en casa, desde cultivos fáciles en tiestos hasta plantas más exigentes.",
+};
+
 export default function Vegetales() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">
