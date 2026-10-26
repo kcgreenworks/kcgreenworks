@@ -1,6 +1,16 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function GraciasPage() {
+  useEffect(() => {
+    const w = window as unknown as { gtag?: (...args: unknown[]) => void };
+    w.gtag?.("event", "generate_lead", {
+      method: "Guia gratis - kcgreenworks.com",
+    });
+  }, []);
+
   return (
     <main className="flex min-h-screen items-center justify-center bg-[#f4f1e8] px-6 py-12">
       <div className="max-w-2xl rounded-3xl bg-white p-8 text-center shadow-xl md:p-12">
