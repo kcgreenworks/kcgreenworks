@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/lombricultura/como-lombrices-mejoran-suelo" },
   title: "Cómo las lombrices mejoran el suelo: explicación real del proceso",
   description:
     "Guía clara sobre cómo las lombrices mejoran el suelo, qué hacen dentro de la tierra, qué componentes producen, para qué sirve el humus y cómo usarlo correctamente.",

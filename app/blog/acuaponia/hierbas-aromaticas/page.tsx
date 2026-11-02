@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/acuaponia/hierbas-aromaticas" },
   title: "Hierbas aromáticas ideales para acuaponía",
   description:
     "Descubre qué hierbas aromáticas crecen mejor en acuaponía — albahaca, menta y más — y cómo cultivarlas con éxito en tu sistema.",

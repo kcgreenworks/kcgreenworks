@@ -1,6 +1,7 @@
 import EnglishArticle from "@/components/EnglishArticle";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/vegetales/pimientos-verdes" },
   title: 'Green peppers: home growing guide',
   description: 'Complete English guide for growing green peppers at home.',
 };

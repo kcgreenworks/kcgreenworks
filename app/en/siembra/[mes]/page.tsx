@@ -17,6 +17,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `What to Plant in ${datosMes.nombreEn}? - Gardening Guide`,
     description: datosMes.descripcionEn,
+    alternates: {
+      canonical: `https://kcgreenworks.com/en/siembra/${datosMes.slug}`,
+    },
   };
 }
 

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/vegetales/sembrar-lechuga-todo-el-ano" },
   title: "How to Grow Lettuce All Year Round Even in Hot Weather",
   description:
     "Complete guide to growing lettuce at home all year long, even during periods of intense heat. Learn about varieties, soil, watering, shade, harvesting, nutrients, and common mistakes.",

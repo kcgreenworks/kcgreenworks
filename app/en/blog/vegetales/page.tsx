@@ -1,3 +1,8 @@
+
+
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/vegetales" },
+};
 const posts = [
   ["/en/blog/vegetales/tomate-black-cherry", "Black Cherry Tomato", "How to grow, support, prune and harvest this productive dark cherry tomato."],
   ["/en/blog/vegetales/zucchini-guia-completa", "Zucchini Growing Guide", "A complete beginner-friendly guide for growing zucchini at home."],

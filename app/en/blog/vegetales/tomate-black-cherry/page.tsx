@@ -1,3 +1,8 @@
+
+
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/vegetales/tomate-black-cherry" },
+};
 export default function Page() {
   return (
     <div className="max-w-3xl mx-auto p-6">

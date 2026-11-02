@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/acuaponia/como-construir-acuaponico" },
   title: "How to Build a Cheap DIY Aquaponics System | KCGreenWorks",
   description:
     "Learn how to build a cheap DIY aquaponics system using simple materials, fish, plants, a water pump, and a grow bed.",

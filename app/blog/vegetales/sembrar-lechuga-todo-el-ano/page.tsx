@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/vegetales/sembrar-lechuga-todo-el-ano" },
   title: "Cómo sembrar lechuga todo el año incluso en clima caliente",
   description:
     "Guía completa para sembrar lechuga en casa durante todo el año, incluso en temporadas de calor fuerte. Aprende variedades, sustrato, riego, sombra, cosecha, nutrientes y errores comunes.",

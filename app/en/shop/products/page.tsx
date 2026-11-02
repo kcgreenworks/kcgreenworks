@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/shop/products" },
+};
+
+
 const products = [
   { title: "LETPOT Smart Hydroponic Garden", description: "12-pod smart indoor hydroponic garden with LED grow light, Wi-Fi and app control.", image: "/images/shop/winner-letpot-hydroponics.jpg", link: "https://www.amazon.com/dp/B0BL3GG6J3" },
   { title: "FCMP Dual-Chamber Composter", description: "37-gallon rotating dual-chamber composter for continuous batches of finished compost.", image: "/images/shop/winner-fcmp-composter.jpg", link: "https://www.amazon.com/dp/B009378AG2" },

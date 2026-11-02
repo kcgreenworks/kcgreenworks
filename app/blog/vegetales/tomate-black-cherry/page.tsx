@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/vegetales/tomate-black-cherry" },
   title: "Tomate Black Cherry: cómo sembrarlo y cuidarlo",
   description:
     "Cómo sembré tomates Black Cherry y lo que aprendí en el proceso: siembra, tutorado, cuidados y por qué se convirtió en uno de mis tomates favoritos.",

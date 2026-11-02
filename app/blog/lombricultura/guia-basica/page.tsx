@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/lombricultura/guia-basica" },
   title: "Lombricultura: guía completa desde la experiencia",
   description:
     "Todo sobre lombricultura tras criar miles de lombrices: cómo empezar, qué comen, cómo multiplicarlas y cómo cosechar humus de calidad en casa.",

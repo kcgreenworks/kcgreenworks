@@ -1,3 +1,8 @@
+
+
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/start-here" },
+};
 export default function StartHere() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">

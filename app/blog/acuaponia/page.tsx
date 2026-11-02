@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/acuaponia" },
   title: "Guías de acuaponía: sistemas caseros paso a paso",
   description:
     "Guías sobre sistemas acuapónicos, cultivo sin suelo, integración de peces y plantas, y cómo crear sistemas productivos en casa.",

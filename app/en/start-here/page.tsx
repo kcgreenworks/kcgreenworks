@@ -1,4 +1,5 @@
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/start-here" },
   title: "Start here | KCGreenWorks",
   description: "A simple starting path for learning home gardening, aquaponics and worm composting.",
 };

@@ -1,3 +1,8 @@
+
+
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/lombricultura" },
+};
 const posts = [
   ["/en/blog/lombricultura/guia-basica", "Basic Worm Composting Guide", "A complete starting point for beginners."],
   ["/en/blog/lombricultura/vermicompostera", "Homemade Worm Bin", "How to build and manage a simple worm bin."],

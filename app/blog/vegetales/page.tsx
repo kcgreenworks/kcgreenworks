@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/vegetales" },
   title: "Vegetales: guías para sembrar en casa",
   description:
     "Guías organizadas sobre vegetales para sembrar en casa, desde cultivos fáciles en tiestos hasta plantas más exigentes.",

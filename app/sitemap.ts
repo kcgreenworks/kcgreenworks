@@ -8,7 +8,6 @@ const BASE_URL = "https://kcgreenworks.com";
 const sharedRoutes = [
   "",
   "/start-here",
-  "/garden-planner",
   "/blog",
   "/blog/acuaponia",
   "/blog/acuaponia/como-construir-acuaponico",
@@ -41,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // /siembra redirige al mes actual; usamos sus destinos finales.
   // Se omiten confirmaciones, API, copias /app/... y avisos legales.
   // Omitimos lastModified hasta disponer de fechas reales por página.
-  return routes.flatMap((route): MetadataRoute.Sitemap => {
+  const bilingualPages = routes.flatMap((route): MetadataRoute.Sitemap => {
     const spanishUrl = `${BASE_URL}${route || "/"}`;
     const englishUrl = `${BASE_URL}/en${route}`;
     const languages = { es: spanishUrl, en: englishUrl };
@@ -51,4 +50,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: englishUrl, alternates: { languages } },
     ];
   });
+
+  // La ruta inglesa contiene un mensaje de bienvenida, no un planificador.
+  return [
+    ...bilingualPages,
+    { url: `${BASE_URL}/garden-planner` },
+  ];
 }
+

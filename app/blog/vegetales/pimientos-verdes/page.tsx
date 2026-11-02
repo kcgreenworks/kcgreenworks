@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/vegetales/pimientos-verdes" },
   title: "Cómo Sembrar Pimientos Verdes en Casa | Guía Completa",
   description:
     "Aprende cómo sembrar pimientos verdes desde semilla hasta cosecha: germinación, trasplante, riego, nutrientes, plagas, cosecha y cómo sacar semillas.",

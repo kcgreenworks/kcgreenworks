@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/acuaponia/hierbas-aromaticas" },
+};
+
+
 const herbs = [
   {
     name: "Basil",

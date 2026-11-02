@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/vegetales/hierba-buena-menta" },
   title: "How to Grow Mint at Home Step by Step",
   description:
     "Practical guide to growing mint at home from cuttings, seeds, or starter plants. Learn about soil, watering, sunlight, pruning, common mistakes, and harvesting.",

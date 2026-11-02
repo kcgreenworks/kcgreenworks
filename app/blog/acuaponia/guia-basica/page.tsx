@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/acuaponia/guia-basica" },
   title: "Acuaponía básica: guía completa desde cero",
   description:
     "Guía completa de acuaponía para principiantes: cómo funciona el sistema, qué necesitas para empezar y los errores que debes evitar, explicado desde la experiencia.",
