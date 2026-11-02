@@ -38,7 +38,7 @@ export default function MintPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/hierbabuena1.jpg.jpeg"
+            src="/images/hierbabuena1.jpg.JPEG"
             alt="Mint plant growing in a container"
             width={1200}
             height={800}
@@ -196,7 +196,7 @@ export default function MintPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/hierbabuena2.jpeg"
+            src="/images/hierbabuena2.JPEG"
             alt="Mint cutting developing roots"
             width={1200}
             height={800}
@@ -273,7 +273,7 @@ export default function MintPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/hierbabuena3.jpeg"
+            src="/images/hierbabuena3.JPEG"
             alt="Freshly harvested mint leaves ready for kitchen use"
             width={1200}
             height={800}

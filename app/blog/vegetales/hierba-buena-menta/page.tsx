@@ -34,7 +34,7 @@ export default function HierbaBuenaMentaPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/hierbabuena1.jpg.jpeg"
+            src="/images/hierbabuena1.jpg.JPEG"
             alt="Planta de hierba buena o menta creciendo en una maceta"
             width={1200}
             height={800}
@@ -175,7 +175,7 @@ export default function HierbaBuenaMentaPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/hierbabuena2.jpeg"
+            src="/images/hierbabuena2.JPEG"
             alt="Esqueje de hierba buena desarrollando raíces"
             width={1200}
             height={800}
@@ -253,7 +253,7 @@ export default function HierbaBuenaMentaPage() {
 
         <div className="overflow-hidden rounded-2xl bg-white shadow-sm">
           <Image
-            src="/images/hierbabuena3.jpeg"
+            src="/images/hierbabuena3.JPEG"
             alt="Hojas frescas de hierba buena cosechadas para usar en la cocina"
             width={1200}
             height={800}
