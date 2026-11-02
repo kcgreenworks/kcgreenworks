@@ -1,3 +1,8 @@
+
+
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/acuaponia" },
+};
 const posts = [
   ["/en/blog/acuaponia/guia-basica", "Basic Aquaponics Guide", "Understand fish, bacteria, plants and the nutrient cycle."],
   ["/en/blog/acuaponia/como-construir-acuaponico", "Build a Home Aquaponic System", "A practical guide to layout, materials, water flow and cycling."],

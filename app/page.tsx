@@ -2,6 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import VideosSection from "@/components/VideosSection";
 
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/" },
+};
+
+
 interface HomeProps {
   searchParams: Promise<{ guide?: string }>;
 }

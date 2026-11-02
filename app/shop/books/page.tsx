@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/shop/books" },
+};
+
+
 const books = [
   {
     title: "HUERTO EN CASA: GUÍA PRÁCTICA PARA PRINCIPIANTES",

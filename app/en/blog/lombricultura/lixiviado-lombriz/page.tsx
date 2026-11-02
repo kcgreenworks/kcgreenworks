@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/lombricultura/lixiviado-lombriz" },
   title: "Worm leachate: what it is, how it is made, and how to use it",
   description:
     "Complete guide about worm leachate: what it is, how it is produced, what it contains, what it is used for, how to dilute it, and how to apply it correctly to plants.",

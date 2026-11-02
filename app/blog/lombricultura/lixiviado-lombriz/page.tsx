@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/lombricultura/lixiviado-lombriz" },
   title: "Lixiviado de lombriz: qué es, cómo se hace y cómo usarlo",
   description:
     "Guía completa sobre el lixiviado de lombriz: qué es, cómo se produce, qué contiene, para qué sirve, cómo diluirlo y cómo aplicarlo correctamente en plantas.",

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/lombricultura/como-lombrices-mejoran-suelo" },
   title: "How worms improve soil: a real explanation of the process",
   description:
     "A clear guide on how worms improve soil, what they do underground, what components they produce, what worm humus is for, and how to use it correctly.",

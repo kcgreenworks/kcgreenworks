@@ -1,5 +1,10 @@
 import Link from "next/link";
 
+export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/lombricultura/que-pueden-consumir-las-lombrices" },
+};
+
+
 export default function QuePuedenConsumirLasLombrices() {
   return (
     <main className="min-h-screen bg-[#f4f1e8] px-6 py-12 text-[#1f2a1f]">

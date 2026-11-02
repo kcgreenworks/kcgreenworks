@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/vegetales/hierba-buena-menta" },
   title: "Cómo sembrar hierba buena o menta en casa paso a paso",
   description:
     "Guía práctica para sembrar hierba buena o menta en casa desde esqueje, semilla o planta. Aprende sustrato, riego, sol, poda, errores comunes y cosecha.",

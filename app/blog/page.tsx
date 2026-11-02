@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog" },
   title: "Blog: huertos, lombricultura y acuaponía",
   description:
     "Artículos y guías prácticas de KCGreenWorks: huertos en casa, lombricultura, acuaponía y siembra sostenible, explicados paso a paso y sin complicaciones.",

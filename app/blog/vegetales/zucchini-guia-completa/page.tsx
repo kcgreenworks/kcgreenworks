@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/vegetales/zucchini-guia-completa" },
   title: "Zucchini (calabacín): guía completa de siembra",
   description:
     "Zucchini desde la semilla hasta la cosecha: siembra, cuidados, polinización y cosecha, con todo lo aprendido cultivándolo año tras año.",

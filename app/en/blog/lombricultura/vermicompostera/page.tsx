@@ -1,6 +1,7 @@
 import EnglishArticle from "@/components/EnglishArticle";
 
 export const metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/en/blog/lombricultura/vermicompostera" },
   title: 'How to build and manage a homemade worm bin',
   description: 'Complete English guide to a homemade worm bin.',
 };

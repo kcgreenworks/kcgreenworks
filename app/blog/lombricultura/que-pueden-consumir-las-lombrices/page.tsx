@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://kcgreenworks.com/blog/lombricultura/que-pueden-consumir-las-lombrices" },
   title: "Qué comen las lombrices: guía de alimentación",
   description:
     "Qué les doy de comer a mis lombrices y por qué funciona: los residuos que sí convierten en composta, los que debes evitar y cómo lo hacen.",
