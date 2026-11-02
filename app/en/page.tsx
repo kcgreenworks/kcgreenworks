@@ -1,6 +1,40 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
 import Link from "next/link"; // Importamos Link para la navegación rápida de Next.js
+
+const pageTitle = "Home Gardening, Vermicomposting & Aquaponics | KCGreenWorks";
+const pageDescription =
+  "Learn to grow food at home with practical guides to gardening, vermicomposting and aquaponics, plus planting calendars for Puerto Rico and Florida.";
+const pageUrl = "https://kcgreenworks.com/en";
+const socialImage =
+  "https://kcgreenworks.com/images/blog/acuaponia/como-construir-acuaponico/kcgreenworks.png";
+
+export const metadata: Metadata = {
+  title: { absolute: pageTitle },
+  description: pageDescription,
+  alternates: {
+    canonical: pageUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "KCGreenWorks",
+    url: pageUrl,
+    title: pageTitle,
+    description: pageDescription,
+    images: [{
+      url: socialImage,
+      alt: "Aquaponics, vermicomposting and sustainable gardening",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [socialImage],
+  },
+};
 
 interface HomeENProps {
   searchParams: Promise<{ guide?: string }>;
@@ -10,7 +44,7 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
   const { guide } = await searchParams;
 
   return (
-    <main className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f] px-6 py-12">
+    <div lang="en" className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f] px-6 py-12">
       <section className="mx-auto max-w-6xl">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div>
@@ -74,13 +108,14 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold leading-tight text-white md:text-4xl">
-              Learn from my real-world experience with gardening,
-              vermicomposting, and aquaponics.
+              Get my free guide: Tu Primer Huerto en Casa
             </h2>
 
             <p className="mt-4 max-w-2xl text-lg leading-8 text-green-100">
-              Get practical tips, lessons learned, mistakes to avoid, and
-              step-by-step guides delivered directly to your inbox.
+              Learn to grow food at home without the guesswork: what to plant,
+              when, and how to avoid the mistakes I already made. Plus
+              practical tips from my real-world experience with gardening,
+              vermicomposting, and aquaponics.
             </p>
           </div>
 
@@ -117,14 +152,14 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
 
             <label className="mt-4 flex items-start gap-3 text-left text-xs leading-5 text-gray-600">
               <input type="checkbox" name="consent" value="yes" required className="mt-1 size-4 accent-green-800" />
-              <span>I agree to receive the guide and useful KCGreenWorks content by email.</span>
+              <span>I agree to receive the “Tu Primer Huerto en Casa” guide and useful KCGreenWorks content by email.</span>
             </label>
 
             <button
               type="submit"
               className="mt-4 w-full rounded-xl bg-[#c7e86b] px-6 py-3 font-bold text-[#17301f] transition hover:bg-[#b5d957]"
             >
-              Get the Free PDF Guide
+              Send me the free guide 🎁
             </button>
 
             <p className="mt-3 text-center text-xs text-gray-500">
@@ -175,6 +210,6 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
           strategy="lazyOnload"
         />
       </section>
-    </main>
+    </div>
   );
 }
