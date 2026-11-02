@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.kcgreenworks.com"),
+  metadataBase: new URL("https://kcgreenworks.com"),
   title: {
     default: "KCGreenWorks | Huertos, Lombricultura y Acuaponía en Casa",
     template: "%s | KCGreenWorks",
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
     siteName: "KCGreenWorks",
     title: "KCGreenWorks | Huertos, Lombricultura y Acuaponía en Casa",
     description:
-      "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarte.",
+      "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarse.",
   },
   twitter: {
     card: "summary_large_image",
     title: "KCGreenWorks | Huertos, Lombricultura y Acuaponía en Casa",
     description:
-      "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarte.",
+      "Guías prácticas para personas que quieren empezar con huertos, compost, lombrices, acuaponía y agricultura en casa sin complicarse.",
   },
 };
 
