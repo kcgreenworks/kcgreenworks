@@ -1,6 +1,40 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
 import Link from "next/link"; // Importamos Link para la navegación rápida de Next.js
+
+const pageTitle = "Home Gardening, Vermicomposting & Aquaponics | KCGreenWorks";
+const pageDescription =
+  "Learn to grow food at home with practical guides to gardening, vermicomposting and aquaponics, plus planting calendars for Puerto Rico and Florida.";
+const pageUrl = "https://kcgreenworks.com/en";
+const socialImage =
+  "https://kcgreenworks.com/images/blog/acuaponia/como-construir-acuaponico/kcgreenworks.png";
+
+export const metadata: Metadata = {
+  title: { absolute: pageTitle },
+  description: pageDescription,
+  alternates: {
+    canonical: pageUrl,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    siteName: "KCGreenWorks",
+    url: pageUrl,
+    title: pageTitle,
+    description: pageDescription,
+    images: [{
+      url: socialImage,
+      alt: "Aquaponics, vermicomposting and sustainable gardening",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: pageTitle,
+    description: pageDescription,
+    images: [socialImage],
+  },
+};
 
 interface HomeENProps {
   searchParams: Promise<{ guide?: string }>;
@@ -10,7 +44,7 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
   const { guide } = await searchParams;
 
   return (
-    <main className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f] px-6 py-12">
+    <div lang="en" className="min-h-screen bg-[#f4f1e8] text-[#1f2a1f] px-6 py-12">
       <section className="mx-auto max-w-6xl">
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div>
@@ -176,6 +210,6 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
           strategy="lazyOnload"
         />
       </section>
-    </main>
+    </div>
   );
 }

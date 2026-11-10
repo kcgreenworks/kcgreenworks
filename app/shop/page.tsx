@@ -163,6 +163,19 @@ const products: Product[] = [
   },
   {
     number: "06",
+    name: "Kit de germinados Kitmiido de 2 frascos",
+    category: "Germinación",
+    use: "Brotes y germinados en casa",
+    image: "/images/shop/kitmiido-sprouting.jpg",
+    amazonPath: "/dp/B0BD7SXKHC",
+    why:
+      "Germinar brotes en frasco es la cosecha más rápida que existe: en pocos días, sin tierra y sin luz especial. Este kit trae los dos frascos de boca ancha con sus tapas de malla, las fundas oscuras para controlar la luz y la base para escurrir, que es donde la mayoría improvisa mal.",
+    forWhom:
+      "Para quien quiere empezar a producir algo comestible en casa esta misma semana, o sumar brotes frescos a ensaladas y sándwiches sin montar un sistema grande.",
+    note: "Enjuaga dos veces al día y escurre bien: la ventilación y el drenaje son lo que separa un brote fresco de uno arruinado.",
+  },
+  {
+    number: "07",
     name: "Lombrices rojas de Uncle Jim’s Worm Farm",
     category: "Lombricultura",
     use: "Iniciar un lombricario",
@@ -175,7 +188,7 @@ const products: Product[] = [
     note: "Confirma las restricciones de envío de organismos vivos y prepara el lecho antes de recibirlas.",
   },
   {
-    number: "07",
+    number: "08",
     name: "Compostera giratoria FCMP de doble cámara",
     category: "Lombricultura",
     use: "Precompostaje y compost",
@@ -188,7 +201,20 @@ const products: Product[] = [
     note: "El equilibrio entre materiales secos, húmedos y aireación sigue siendo la clave.",
   },
   {
-    number: "08",
+    number: "09",
+    name: "Vermicompostera VermiHut Plus de 5 bandejas",
+    category: "Lombricultura",
+    use: "Vermicompostaje en casa",
+    image: "/images/shop/vermihut-plus.jpg",
+    amazonPath: "/dp/B0GFB7PQ91",
+    why:
+      "Es el sistema de bandejas que recomiendo para empezar en serio: las lombrices suben solas de bandeja en bandeja buscando comida fresca, y abajo queda el humus listo para cosechar sin separar lombrices a mano. La bandeja inferior recoge el lixiviado y lo deja salir por su llave.",
+    forWhom:
+      "Para hogares que generan restos de cocina a diario y quieren producir humus de forma continua, en interior o en un rincón sombreado del patio.",
+    note: "Empieza con una o dos bandejas y añade las demás según crezca la población; sobrealimentar al principio es el error más común.",
+  },
+  {
+    number: "10",
     name: "Medidor de pH Apera PH20",
     category: "Acuaponía",
     use: "Medición de pH",
@@ -201,7 +227,7 @@ const products: Product[] = [
     note: "Un medidor solo es confiable si se calibra, enjuaga y almacena según sus instrucciones.",
   },
   {
-    number: "09",
+    number: "11",
     name: "API Freshwater Master Test Kit",
     category: "Acuaponía",
     use: "Ciclo del nitrógeno",
@@ -214,7 +240,7 @@ const products: Product[] = [
     note: "Registra fecha y resultados; una serie de mediciones cuenta más que un valor aislado.",
   },
   {
-    number: "10",
+    number: "12",
     name: "LETPOT jardín hidropónico de 12 espacios",
     category: "Acuaponía",
     use: "Cultivo interior compacto",
@@ -226,13 +252,26 @@ const products: Product[] = [
       "Para principiantes con poco espacio que quieren experimentar con cultivo sin suelo dentro de casa.",
     note: "Es hidroponía, no acuaponía: utiliza nutrientes preparados y no incluye peces.",
   },
+  {
+    number: "13",
+    name: "Clay pebbles Legigo de 15 libras",
+    category: "Acuaponía",
+    use: "Medio de cultivo y biofiltro",
+    image: "/images/shop/clay-pebbles.jpg",
+    amazonPath: "/dp/B0BGHH81ZN",
+    why:
+      "La arcilla expandida es el medio que uso en la cama de cultivo: liviana, reutilizable y con una superficie enorme donde viven las bacterias del ciclo del nitrógeno. No se deshace en el agua ni altera el pH como otros sustratos.",
+    forWhom:
+      "Para camas de acuaponía o hidroponía, cultivo en macetas sin suelo y cualquiera que necesite drenaje sin peso extra.",
+    note: "Enjuágalas antes de usarlas: el polvo de arcilla enturbia el agua los primeros días.",
+  },
 ];
 
 const categories = [
   { name: "Huerto", href: "#huerto", count: 3 },
-  { name: "Germinación", href: "#germinacion", count: 2 },
-  { name: "Lombricultura", href: "#lombricultura", count: 2 },
-  { name: "Acuaponía", href: "#acuaponia", count: 3 },
+  { name: "Germinación", href: "#germinacion", count: 3 },
+  { name: "Lombricultura", href: "#lombricultura", count: 3 },
+  { name: "Acuaponía", href: "#acuaponia", count: 4 },
 ] as const;
 
 function categoryId(category: Product["category"]) {
@@ -339,7 +378,7 @@ export default function ShopPage() {
                 Productos que uso y recomiendo
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-[#e6efe8] md:text-xl">
-                Mis libros y diez herramientas que resuelven problemas reales del huerto, la germinación, la lombricultura y la acuaponía. Te cuento qué aportan y cuándo sí vale la pena considerarlas.
+                Mis libros y trece herramientas que resuelven problemas reales del huerto, la germinación, la lombricultura y la acuaponía. Te cuento qué aportan y cuándo sí vale la pena considerarlas.
               </p>
               <a
                 href="#libros"
@@ -352,7 +391,7 @@ export default function ShopPage() {
             <div className="relative mt-9 max-w-3xl rounded-2xl border border-white/20 bg-white/10 p-5 backdrop-blur-sm">
               <p className="text-sm font-bold text-[#f6e9b6]">Aviso de afiliados</p>
               <p className="mt-2 text-sm leading-6 text-[#e6efe8]">
-                Algunos enlaces de esta página pueden convertirse en enlaces de afiliado. Si compras a través de ellos, KCGreenWorks podría recibir una comisión sin costo adicional para ti. Por ahora, los enlaces no incluyen ningún Associates ID.
+                Algunos enlaces de esta página pueden convertirse en enlaces de afiliado. Si compras a través de ellos, KCGreenWorks podría recibir una comisión sin costo adicional para ti. Los enlaces de producto de esta página incluyen el Associates ID de KCGreenWorks.
               </p>
             </div>
           </header>
@@ -415,7 +454,7 @@ export default function ShopPage() {
           <div className="mb-8 flex flex-col gap-3 border-b border-[#cfc9b9] pb-6 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-green-800">La lista corta</p>
-              <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] sm:text-4xl">Diez recomendaciones, con contexto</h2>
+              <h2 className="mt-2 text-3xl font-black tracking-[-0.02em] sm:text-4xl">Trece recomendaciones, con contexto</h2>
             </div>
             <p className="max-w-md text-sm leading-6 text-[#657064]">
               El mejor producto no es el más complejo: es el que encaja con tu espacio, experiencia y forma de cultivar.
