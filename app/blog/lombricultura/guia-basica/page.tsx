@@ -122,6 +122,44 @@ export default function GuiaLombricultura() {
           </p>
         </section>
 
+        {/* LO QUE USO */}
+        <section className="space-y-4 rounded-2xl border border-[#d8d2c3] bg-[#fffdf7] p-6">
+          <h2 className="text-2xl font-bold">Para empezar sin improvisar</h2>
+
+          <p>
+            Puedes montar el sistema con un contenedor cualquiera, pero si quieres empezar con equipo probado, esto es lo que recomiendo:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <a
+                href="https://www.amazon.com/dp/B0GFB7PQ91?tag=kcgreenworks-20"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="font-semibold text-green-800 underline"
+              >
+                Vermicompostera VermiHut Plus de 5 bandejas
+              </a>
+              : las lombrices suben solas de bandeja en bandeja y el humus queda listo abajo.
+            </li>
+            <li>
+              <a
+                href="https://www.amazon.com/s?k=Uncle+Jims+Worm+Farm+red+wiggler+composting+worms&tag=kcgreenworks-20"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="font-semibold text-green-800 underline"
+              >
+                Lombrices rojas de Uncle Jim&rsquo;s Worm Farm
+              </a>
+              : la Eisenia para poblar tu sistema desde el primer día.
+            </li>
+          </ul>
+
+          <p className="text-sm text-[#657064]">
+            Algunos enlaces de esta página son de afiliado de Amazon: si compras a través de ellos, KC Greenworks puede recibir una comisión sin costo extra para ti.
+          </p>
+        </section>
+
         {/* ALIMENTACION */}
         <section className="space-y-4">
           <h2 className="text-2xl font-bold">Alimentación</h2>
@@ -140,6 +178,14 @@ export default function GuiaLombricultura() {
             <li>Lácteos</li>
             <li>Grasas</li>
           </ul>
+
+          <p>
+            La lista completa, con cantidades y frecuencia, está en mi guía{" "}
+            <Link href="/blog/lombricultura/que-pueden-consumir-las-lombrices" className="font-semibold text-green-800 underline">
+              qué pueden consumir las lombrices
+            </Link>
+            .
+          </p>
         </section>
 
         {/* CONDICIONES */}
@@ -176,6 +222,51 @@ export default function GuiaLombricultura() {
 
           <p className="font-semibold">
             No es basura. Es recurso mal manejado.
+          </p>
+        </section>
+
+        {/* SIGUE Y MIS LIBROS */}
+        <section className="space-y-4 rounded-2xl border border-[#d8d2c3] bg-[#fffdf7] p-6">
+          <h2 className="text-2xl font-bold">Sigue con el sistema completo</h2>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <Link href="/blog/lombricultura/vermicompostera" className="font-semibold text-green-800 underline">
+                Cómo montar tu vermicompostera paso a paso
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/lombricultura/lixiviado-lombriz" className="font-semibold text-green-800 underline">
+                El lixiviado de lombriz: qué es y cómo usarlo sin quemar tus plantas
+              </Link>
+            </li>
+            <li>
+              <Link href="/shop#lombricultura" className="font-semibold text-green-800 underline">
+                Todo lo que uso en mi sistema, en la tienda
+              </Link>
+            </li>
+          </ul>
+
+          <p>
+            Y si quieres el tema entero, ordenado y sin relleno, está en mis libros:{" "}
+            <a
+              href="https://www.amazon.com/dp/B0H24D725B?tag=kcgreenworks-20"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-semibold text-green-800 underline"
+            >
+              Lombricultura en Casa
+            </a>{" "}
+            y{" "}
+            <a
+              href="https://a.co/d/04YEWNq2"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-semibold text-green-800 underline"
+            >
+              La Lombriz al Descubierto
+            </a>
+            .
           </p>
         </section>
 
