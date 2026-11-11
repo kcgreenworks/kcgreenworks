@@ -2,6 +2,9 @@ import Link from "next/link";
 
 export const metadata = {
   alternates: { canonical: "https://kcgreenworks.com/en/blog/lombricultura/guia-basica" },
+  title: "Vermicomposting: A Complete Guide from Hands-On Experience",
+  description:
+    "Everything about vermicomposting after raising thousands of worms: how to start, what they eat, how they multiply, and how to harvest quality worm castings at home.",
 };
 
 
@@ -25,16 +28,24 @@ export default function VermicompostingGuide() {
 
         {/* INTRO */}
         <p className="text-lg text-[#4b5a4b]">
-          Vermicomposting is a biological system in which worms transform
-          organic waste into worm castings (humus), one of the most complete
-          natural fertilizers available. It is not simply composting—it is a
-          controlled process that depends on the balance between organic matter,
-          moisture, oxygen, and microbial activity.
+          If you had asked me years ago what a worm could do, I probably would
+          have given you a pretty simple answer. Today I see it very
+          differently. After countless hours watching them work, making
+          mistakes, fixing systems, and seeing how they transform organic
+          waste into top-quality humus, I can tell you that vermicomposting
+          is one of the most powerful tools there is to improve soil
+          naturally. It is not just composting: it is understanding a living
+          ecosystem where moisture, oxygen, organic matter, and millions of
+          microorganisms work together with the worms.
         </p>
 
         <p>
-          When managed correctly, it reduces waste, improves soil quality, and
-          produces high-quality fertilizer even in small spaces.
+          That is what happened to me: the more I learned about worms, the
+          more I understood that the scraps many people consider trash are
+          actually raw material. When the system is managed correctly, it
+          reduces waste, improves soil structure, increases biological
+          activity, and produces a stable fertilizer that can be used in
+          vegetable gardens, flower beds, and growing systems of every kind.
         </p>
 
         {/* IMAGES */}
@@ -90,9 +101,9 @@ export default function VermicompostingGuide() {
           </h2>
 
           <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Eisenia fetida:</strong> the most efficient species</li>
-            <li><strong>Eisenia andrei:</strong> very similar behavior</li>
-            <li><strong>African Nightcrawler:</strong> larger but more delicate</li>
+            <li><strong>Eisenia fetida:</strong> the most efficient species — it lives in the bedding, eats about half its body weight a day, and tolerates a home bin better than any other</li>
+            <li><strong>Eisenia andrei:</strong> nearly identical behavior; the two species often come mixed in commercial worm cultures</li>
+            <li><strong>African Nightcrawler:</strong> larger and fast in warm weather, but more delicate — cold hurts it quickly</li>
           </ul>
 
           <p className="font-semibold">
@@ -128,7 +139,51 @@ export default function VermicompostingGuide() {
           </ul>
 
           <p>
-            You can build a system on a balcony, patio, garage, or indoors.
+            Start in that order: bedding first, then the worms, then the
+            food. You can build a system on a balcony, patio, garage, or
+            indoors.
+          </p>
+        </section>
+
+        {/* WHAT I USE */}
+        <section className="space-y-4 rounded-2xl border border-[#d8d2c3] bg-[#fffdf7] p-6">
+          <h2 className="text-2xl font-bold">Start Without Improvising</h2>
+
+          <p>
+            You can build the system with any container, but if you want to
+            start with proven equipment, this is what I recommend:
+          </p>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <a
+                href="https://www.amazon.com/dp/B0GFB7PQ91?tag=kcgreenworks-20"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="font-semibold text-green-800 underline"
+              >
+                VermiHut Plus 5-Tray Worm Composter
+              </a>
+              : the worms climb up tray by tray on their own and the
+              finished castings stay at the bottom.
+            </li>
+            <li>
+              <a
+                href="https://www.amazon.com/s?k=Uncle+Jims+Worm+Farm+red+wiggler+composting+worms&tag=kcgreenworks-20"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="font-semibold text-green-800 underline"
+              >
+                Red Wiggler Composting Worms from Uncle Jim&rsquo;s Worm Farm
+              </a>
+              : the Eisenia you need to stock your system from day one.
+            </li>
+          </ul>
+
+          <p className="text-sm text-[#657064]">
+            Some links on this page are Amazon affiliate links: if you buy
+            through them, KC Greenworks may earn a commission at no extra
+            cost to you.
           </p>
         </section>
 
@@ -150,6 +205,14 @@ export default function VermicompostingGuide() {
             <li>Dairy products</li>
             <li>Grease and oils</li>
           </ul>
+
+          <p>
+            The full list, with amounts and frequency, is in my guide{" "}
+            <Link href="/en/blog/lombricultura/que-pueden-consumir-las-lombrices" className="font-semibold text-green-800 underline">
+              What Worms Can Eat
+            </Link>
+            .
+          </p>
         </section>
 
         {/* CONDITIONS */}
@@ -174,6 +237,12 @@ export default function VermicompostingGuide() {
             <li>Lack of airflow</li>
             <li>Poor balance between dry and wet materials</li>
           </ul>
+
+          <p>
+            Every one of these announces itself the same way: bad smell,
+            fruit flies, or worms trying to escape. The bin always tells you
+            what is wrong.
+          </p>
         </section>
 
         {/* CONCLUSION */}
@@ -188,6 +257,52 @@ export default function VermicompostingGuide() {
 
           <p className="font-semibold">
             It is not waste. It is a resource that has not been managed properly.
+          </p>
+        </section>
+
+        {/* KEEP GOING AND MY BOOKS */}
+        <section className="space-y-4 rounded-2xl border border-[#d8d2c3] bg-[#fffdf7] p-6">
+          <h2 className="text-2xl font-bold">Keep Going: The Complete System</h2>
+
+          <ul className="list-disc pl-6 space-y-2">
+            <li>
+              <Link href="/en/blog/lombricultura/vermicompostera" className="font-semibold text-green-800 underline">
+                How to build and manage a homemade worm bin
+              </Link>
+            </li>
+            <li>
+              <Link href="/en/blog/lombricultura/lixiviado-lombriz" className="font-semibold text-green-800 underline">
+                Worm leachate: what it is and how to use it without burning your plants
+              </Link>
+            </li>
+            <li>
+              <Link href="/en/shop" className="font-semibold text-green-800 underline">
+                Everything I use in my system, in the shop
+              </Link>
+            </li>
+          </ul>
+
+          <p>
+            And if you want the whole topic, organized and without filler,
+            it is in my books:{" "}
+            <a
+              href="https://www.amazon.com/dp/B0H24D725B?tag=kcgreenworks-20"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-semibold text-green-800 underline"
+            >
+              Vermicomposting at Home
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://a.co/d/04YEWNq2"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="font-semibold text-green-800 underline"
+            >
+              The Earthworm Uncovered
+            </a>
+            .
           </p>
         </section>
 
