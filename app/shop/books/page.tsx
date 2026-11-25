@@ -5,8 +5,15 @@ export const metadata = {
   alternates: { canonical: "https://kcgreenworks.com/shop/books" },
 };
 
+type Book = {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  directSlug?: string;
+};
 
-const books = [
+const books: Book[] = [
   {
     title: "HUERTO EN CASA: GUÍA PRÁCTICA PARA PRINCIPIANTES",
     description:
@@ -20,6 +27,7 @@ const books = [
       "Construye tu propio sistema para cultivar tomates en tierra, hidroponía o acuaponía, desde la siembra hasta una cosecha saludable.",
     image: "/images/shop/book8-cosecha-roja.jpg",
     link: "https://www.amazon.com/dp/B0HFKZ4P8L",
+    directSlug: "cosecha-roja",
   },
   {
     title: "El Arte de Cultivar Yerba Buena: De la Planta a la Mesa",
@@ -27,6 +35,7 @@ const books = [
       "Guía práctica para cultivar yerba buena en tierra, hidroponía y acuaponía, aprovechar sus beneficios y disfrutarla cada día.",
     image: "/images/shop/book9-yerba-buena.png",
     link: "https://www.amazon.com/dp/B0HDV98V67",
+    directSlug: "yerba-buena",
   },
   {
     title:
@@ -35,6 +44,7 @@ const books = [
       "Convierte tus desperdicios de cocina en fertilizante natural. Aprende cómo construir, mantener y aprovechar un sistema de lombricultura casera desde cero, aunque nunca hayas hecho compost antes.",
     image: "/images/shop/book1.jpg",
     link: "https://www.amazon.com/dp/B0H24D725B",
+    directSlug: "lombricultura-en-casa",
   },
   {
     title:
@@ -43,6 +53,7 @@ const books = [
       "Una guía práctica basada en experiencia real para construir sistemas acuapónicos, entender peces, bacterias, plantas, agua y ciclo del nitrógeno hasta lograr tu primera cosecha.",
     image: "/images/shop/book2.jpg",
     link: "https://a.co/d/0gRcplww",
+    directSlug: "acuaponia-guia-completa",
   },
   {
     title:
@@ -51,6 +62,7 @@ const books = [
       "Guía completa sobre lombricultura práctica: biología, alimentación, reproducción, errores comunes y cómo montar tu primer lombricario en 7 pasos.",
     image: "/images/shop/book3.jpg",
     link: "https://a.co/d/04YEWNq2",
+    directSlug: "la-lombriz-al-descubierto",
   },
   {
     title:
@@ -102,13 +114,37 @@ export default function ShopBooksPage() {
           </p>
         </header>
 
+        <div className="mb-10 rounded-3xl border-2 border-green-800 bg-green-800 p-8 text-white shadow-sm md:p-10">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-300">
+            Oferta de lanzamiento
+          </p>
+          <h2 className="text-3xl font-bold leading-tight md:text-4xl">
+            Paquete Completo: los 5 libros por $9.99
+          </h2>
+          <p className="mt-4 max-w-3xl text-lg leading-8 text-green-50">
+            Por separado suman $19.95. En paquete pagas menos que por 3 y te
+            los llevas todos: Yerba Buena, Cosecha Roja, Lombricultura en
+            Casa, La Lombriz al Descubierto y Acuaponía: La Guía Completa.
+            Descarga inmediata en EPUB y PDF.
+          </p>
+          <form method="POST" action="/api/checkout">
+            <input type="hidden" name="slug" value="paquete-completo" />
+            <button
+              type="submit"
+              className="mt-6 inline-flex rounded-2xl bg-yellow-400 px-7 py-3.5 font-bold text-green-950 transition hover:bg-yellow-300"
+            >
+              Comprar el paquete · $9.99
+            </button>
+          </form>
+        </div>
+
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {books.map((book) => (
             <article
               key={book.title}
               className="overflow-hidden rounded-3xl border border-[#d8d2c3] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="relative flex h-[520px] w-full items-center justify-center bg-[#eef2e8] p-6">
+              <div className="relative flex h-[300px] w-full items-center justify-center bg-[#eef2e8] p-6">
                 <Image
                   src={book.image}
                   alt={book.title}
@@ -124,14 +160,29 @@ export default function ShopBooksPage() {
                 <p className="mt-5 text-[17px] leading-8 text-[#4b5a4b]">
                   {book.description}
                 </p>
-                <a
-                  href={book.link}
-                  target="_blank"
-                  rel="noopener noreferrer sponsored"
-                  className="mt-8 inline-flex rounded-2xl bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900"
-                >
-                  Ver en Amazon
-                </a>
+                {book.directSlug ? (
+                  <form method="POST" action="/api/checkout">
+                    <input type="hidden" name="slug" value={book.directSlug} />
+                    <button
+                      type="submit"
+                      className="mt-8 inline-flex rounded-2xl bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900"
+                    >
+                      Comprar directo · $3.99
+                    </button>
+                    <p className="mt-2 text-sm text-[#4b5a4b]">
+                      Descarga inmediata en EPUB y PDF.
+                    </p>
+                  </form>
+                ) : (
+                  <a
+                    href={book.link}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="mt-8 inline-flex rounded-2xl bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900"
+                  >
+                    Ver en Amazon
+                  </a>
+                )}
               </div>
             </article>
           ))}

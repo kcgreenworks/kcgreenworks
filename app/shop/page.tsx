@@ -26,6 +26,8 @@ type Book = {
   description: string;
   image: string;
   link: string;
+  direct?: boolean;
+  slug?: string;
 };
 
 /**
@@ -46,40 +48,50 @@ function amazonLink(path: string) {
 
 const books: Book[] = [
   {
-    title: "Huerto en Casa",
-    description: "Guía práctica para comenzar desde cero, sembrar, cuidar y cosechar alimentos en cualquier espacio.",
-    image: "/images/shop/book7-huerto-en-casa.jpg",
-    link: amazonLink("/dp/B0H8TFTNLG"),
-  },
-  {
     title: "Cosecha Roja",
     description: "Cómo sembrar, cuidar y cosechar tomates en tierra, hidroponía o acuaponía.",
     image: "/images/shop/book8-cosecha-roja.jpg",
     link: amazonLink("/dp/B0HFKZ4P8L"),
+    direct: true,
+    slug: "cosecha-roja",
   },
   {
     title: "El Arte de Cultivar Yerba Buena",
     description: "Una guía para cultivar yerba buena y llevarla de la planta a la mesa.",
     image: "/images/shop/book9-yerba-buena.png",
     link: amazonLink("/dp/B0HDV98V67"),
+    direct: true,
+    slug: "yerba-buena",
   },
   {
     title: "Lombricultura en Casa",
     description: "Construye y mantén tu propio sistema de vermicompostaje desde cero.",
     image: "/images/shop/book1.jpg",
     link: amazonLink("/dp/B0H24D725B"),
+    direct: true,
+    slug: "lombricultura-en-casa",
   },
   {
     title: "Acuaponía",
     description: "La guía completa para avanzar desde cero hasta tu primera cosecha.",
     image: "/images/shop/book2.jpg",
     link: "https://a.co/d/0gRcplww",
+    direct: true,
+    slug: "acuaponia-guia-completa",
   },
   {
     title: "La Lombriz al Descubierto",
     description: "Biología, alimentación, reproducción y lombricultura práctica en una sola guía.",
     image: "/images/shop/book3.jpg",
     link: "https://a.co/d/04YEWNq2",
+    direct: true,
+    slug: "la-lombriz-al-descubierto",
+  },
+  {
+    title: "Huerto en Casa",
+    description: "Guía práctica para comenzar desde cero, sembrar, cuidar y cosechar alimentos en cualquier espacio.",
+    image: "/images/shop/book7-huerto-en-casa.jpg",
+    link: amazonLink("/dp/B0H8TFTNLG"),
   },
   {
     title: "Acuaponía en Casa",
@@ -345,15 +357,28 @@ function BookCard({ book }: { book: Book }) {
       <div className="flex flex-1 flex-col p-5">
         <h3 className="text-xl font-black leading-tight text-[#19331f]">{book.title}</h3>
         <p className="mt-3 flex-1 text-sm leading-6 text-[#526052]">{book.description}</p>
-        <a
-          href={book.link}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          aria-label={`Ver ${book.title} en Amazon (abre en otra pestaña)`}
-          className="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-green-800 px-4 py-3 text-center text-sm font-extrabold text-white transition hover:bg-green-950 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
-        >
-          Ver libro en Amazon <span className="ml-2" aria-hidden="true">↗</span>
-        </a>
+        {book.direct ? (
+          <form method="POST" action="/api/checkout" className="mt-5">
+            <input type="hidden" name="slug" value={book.slug} />
+            <button
+              type="submit"
+              aria-label={`Comprar ${book.title} directo en KCGreenWorks`}
+              className="inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-green-800 px-4 py-3 text-center text-sm font-extrabold text-white transition hover:bg-green-950 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
+            >
+              Comprar directo · $3.99
+            </button>
+          </form>
+        ) : (
+          <a
+            href={book.link}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            aria-label={`Ver ${book.title} en Amazon (abre en otra pestaña)`}
+            className="mt-5 inline-flex min-h-12 w-full items-center justify-center rounded-xl bg-green-800 px-4 py-3 text-center text-sm font-extrabold text-white transition hover:bg-green-950 focus:outline-none focus:ring-2 focus:ring-green-700 focus:ring-offset-2"
+          >
+            Ver libro en Amazon <span className="ml-2" aria-hidden="true">↗</span>
+          </a>
+        )}
       </div>
     </article>
   );
@@ -414,6 +439,37 @@ export default function ShopPage() {
             >
               Ver biblioteca completa
             </Link>
+          </div>
+
+          <div className="relative mb-7 overflow-hidden rounded-[1.75rem] bg-[#173f2a] px-6 py-6 text-white shadow-md sm:px-8 sm:py-8">
+            <div className="absolute -right-14 -top-20 h-56 w-56 rounded-full bg-[#d5a72f]/20 blur-2xl" />
+            <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center">
+              <div className="relative h-72 w-full shrink-0 overflow-hidden rounded-2xl sm:h-80 sm:w-60 lg:w-72">
+                <Image
+                  src="/images/shop/promo-paquete-v1.jpg"
+                  alt="Paquete Completo: los 5 libros de KCGreenWorks por $9.99"
+                  fill
+                  sizes="(max-width: 640px) 100vw, 288px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col items-start">
+                <p className="text-xs font-black uppercase tracking-[0.18em] text-[#e8c75e]">Oferta de lanzamiento</p>
+                <h3 className="mt-2 text-2xl font-black leading-tight sm:text-3xl">Paquete Completo: los 5 libros por $9.99</h3>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-[#e6efe8]">
+                  Yerba Buena, Cosecha Roja, Lombricultura en Casa, La Lombriz al Descubierto y Acuaponía: La Guía Completa, en EPUB y PDF. Sueltos suman $19.95; el paquete cuesta menos que tres por separado.
+                </p>
+                <form method="POST" action="/api/checkout" className="mt-5">
+                  <input type="hidden" name="slug" value="paquete-completo" />
+                  <button
+                    type="submit"
+                    className="inline-flex min-h-12 items-center justify-center rounded-xl bg-[#e8c75e] px-6 py-3 text-sm font-black text-[#173f2a] transition hover:bg-[#f3d87e] focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#173f2a]"
+                  >
+                    Comprar el paquete · $9.99
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
