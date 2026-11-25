@@ -114,6 +114,11 @@ export default function ShopBooksPage() {
           </p>
         </header>
 
+        <div className="mb-10 rounded-2xl border border-yellow-500/70 bg-yellow-50 px-5 py-4 text-[15px] leading-7 text-[#4b5a4b]">
+          📚 <strong>Importante:</strong> todos los libros de KCGreenWorks
+          están escritos en <strong>español</strong>.
+        </div>
+
         <div className="mb-10 rounded-3xl border-2 border-green-800 bg-green-800 p-8 text-white shadow-sm md:p-10">
           <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-yellow-300">
             Oferta de lanzamiento

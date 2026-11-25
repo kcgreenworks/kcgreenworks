@@ -432,6 +432,9 @@ export default function ShopPage() {
               <p className="mt-3 max-w-2xl leading-7 text-[#526052]">
                 Guías escritas desde la experiencia para ayudarte a cultivar, criar lombrices y comenzar en acuaponía con una base clara.
               </p>
+              <p className="mt-2 text-sm font-bold text-green-800">
+                📚 Todos los libros están en español.
+              </p>
             </div>
             <Link
               href="/shop/books"

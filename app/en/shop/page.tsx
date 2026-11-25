@@ -345,6 +345,9 @@ export default function ShopPageEN() {
               <p className="mt-2 text-sm text-[#4b5a4b]">
                 Books written and recommended by KCGreenWorks.
               </p>
+              <p className="mt-1 text-sm font-bold text-green-800">
+                📚 All books are written in Spanish.
+              </p>
             </div>
 
             <Link
