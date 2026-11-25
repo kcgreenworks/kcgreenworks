@@ -5,8 +5,50 @@ export const metadata = {
   alternates: { canonical: "https://kcgreenworks.com/en/shop" },
 };
 
+type Item = {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  directSlug?: string;
+};
 
-const books = [
+const books: Item[] = [
+  {
+    title: "COSECHA ROJA",
+    description: "Learn to grow and harvest tomatoes in soil, hydroponic, or aquaponic systems.",
+    image: "/images/shop/book8-cosecha-roja.jpg",
+    link: "https://www.amazon.com/dp/B0HFKZ4P8L",
+    directSlug: "cosecha-roja",
+  },
+  {
+    title: "EL ARTE DE CULTIVAR YERBA BUENA",
+    description: "Grow yerba buena in soil, hydroponics, or aquaponics and bring it from plant to table.",
+    image: "/images/shop/book9-yerba-buena.png",
+    link: "https://www.amazon.com/dp/B0HDV98V67",
+    directSlug: "yerba-buena",
+  },
+  {
+    title: "VERMICOMPOSTING AT HOME",
+    description: "Build your own vermicomposting system from scratch.",
+    image: "/images/shop/book1.jpg",
+    link: "https://www.amazon.com/dp/B0H24D725B",
+    directSlug: "lombricultura-en-casa",
+  },
+  {
+    title: "AQUAPONICS",
+    description: "From scratch to your first harvest.",
+    image: "/images/shop/book2.jpg",
+    link: "https://a.co/d/0gRcplww",
+    directSlug: "acuaponia-guia-completa",
+  },
+  {
+    title: "THE EARTHWORM UNCOVERED",
+    description: "Biology, feeding, and practical vermiculture.",
+    image: "/images/shop/book3.jpg",
+    link: "https://a.co/d/04YEWNq2",
+    directSlug: "la-lombriz-al-descubierto",
+  },
   {
     title: "HUERTO EN CASA",
     description: "A practical beginner's guide to planting, caring for, and harvesting food in any space.",
@@ -14,57 +56,21 @@ const books = [
     link: "https://www.amazon.com/dp/B0H8TFTNLG",
   },
   {
-    title: "COSECHA ROJA",
-    description: "Learn to grow and harvest tomatoes in soil, hydroponic, or aquaponic systems.",
-    image: "/images/shop/book8-cosecha-roja.jpg",
-    link: "https://www.amazon.com/dp/B0HFKZ4P8L",
-  },
-  {
-    title: "EL ARTE DE CULTIVAR YERBA BUENA",
-    description: "Grow yerba buena in soil, hydroponics, or aquaponics and bring it from plant to table.",
-    image: "/images/shop/book9-yerba-buena.png",
-    link: "https://www.amazon.com/dp/B0HDV98V67",
-  },
-  {
-    title: "VERMICOMPOSTING AT HOME",
-    description: "Build your own vermicomposting system from scratch.",
-    image: "/images/shop/book1.jpg",
-    link: "https://www.amazon.com/dp/B0H24D725B",
-  },
-  {
-    title: "AQUAPONICS",
-    description: "From scratch to your first harvest.",
-    image: "/images/shop/book2.jpg",
-    link: "https://a.co/d/0gRcplww",
-  },
-  {
-    title: "THE EARTHWORM UNCOVERED",
-    description: "Biology, feeding, and practical vermiculture.",
-    image: "/images/shop/book3.jpg",
-    link: "https://a.co/d/04YEWNq2",
+    title: "AQUAPONICS AT HOME",
+    description: "Build your own system and grow food with less water.",
+    image: "/images/shop/book4.jpg",
+    link: "https://a.co/d/00LlFNKN",
   },
   {
     title: "FISH FOR AQUAPONICS",
     description:
       "Breeding, feeding, water quality and fish selection for aquaponic systems.",
-    image: "/images/shop/book4.jpg",
-    link: "https://a.co/d/0dbs9z5j",
-  },
-  {
-    title: "AQUAPONICS FOR BEGINNERS",
-    description: "A practical guide to start your first aquaponic system.",
-    image: "/images/shop/book5.jpg",
-    link: "#",
-  },
-  {
-    title: "AQUAPONICS AT HOME",
-    description: "Build your own system and grow food with less water.",
     image: "/images/shop/book6.jpg",
-    link: "https://a.co/d/00LlFNKN",
+    link: "https://a.co/d/0dbs9z5j",
   },
 ];
 
-const products = [
+const products: Item[] = [
   {
     title: "LETPOT Smart Hydroponic Garden",
     description: "12-pod smart indoor hydroponic garden with LED grow light, Wi-Fi and app control.",
@@ -186,7 +192,7 @@ function CarouselCard({
   item,
   buttonText,
 }: {
-  item: { title: string; description: string; image: string; link: string };
+  item: Item;
   buttonText: string;
 }) {
   return (
@@ -209,14 +215,26 @@ function CarouselCard({
           {item.description}
         </p>
 
-        <a
-          href={item.link}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="mt-4 inline-flex rounded-xl bg-green-800 px-4 py-2 text-xs font-semibold text-white transition hover:bg-green-900"
-        >
-          {buttonText}
-        </a>
+        {item.directSlug ? (
+          <form method="POST" action="/api/checkout" className="mt-4">
+            <input type="hidden" name="slug" value={item.directSlug} />
+            <button
+              type="submit"
+              className="inline-flex rounded-xl bg-green-800 px-4 py-2 text-xs font-semibold text-white transition hover:bg-green-900"
+            >
+              Buy Direct · $3.99
+            </button>
+          </form>
+        ) : (
+          <a
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="mt-4 inline-flex rounded-xl bg-green-800 px-4 py-2 text-xs font-semibold text-white transition hover:bg-green-900"
+          >
+            {buttonText}
+          </a>
+        )}
       </div>
     </div>
   );
@@ -226,7 +244,7 @@ function ProductCarousel({
   items,
   buttonText,
 }: {
-  items: { title: string; description: string; image: string; link: string }[];
+  items: Item[];
   buttonText: string;
 }) {
   const loopItems = [...items, ...items];
@@ -297,6 +315,28 @@ export default function ShopPageEN() {
             purchases made through these links at no additional cost to you.
           </p>
         </header>
+
+        <div className="mb-14 rounded-3xl border-2 border-green-800 bg-green-800 p-6 text-white shadow-sm md:p-8">
+          <p className="mb-2 text-sm font-semibold uppercase tracking-wide text-yellow-300">
+            Launch Offer
+          </p>
+          <h2 className="text-2xl font-bold leading-tight md:text-3xl">
+            Complete Bundle: all 5 books for $9.99
+          </h2>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-green-50">
+            Separately they add up to $19.95. In the bundle you pay less than
+            for 3 and get them all, with instant download in EPUB and PDF.
+          </p>
+          <form method="POST" action="/api/checkout">
+            <input type="hidden" name="slug" value="paquete-completo" />
+            <button
+              type="submit"
+              className="mt-5 inline-flex rounded-2xl bg-yellow-400 px-6 py-3 font-bold text-green-950 transition hover:bg-yellow-300"
+            >
+              Buy the bundle · $9.99
+            </button>
+          </form>
+        </div>
 
         <section className="mb-14 rounded-3xl border border-[#d8d2c3] bg-[#fbfaf5] p-6 shadow-sm">
           <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
