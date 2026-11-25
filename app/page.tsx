@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import VideosSection from "@/components/VideosSection";
 
 export const metadata = {
@@ -208,6 +209,49 @@ export default async function Home({ searchParams }: HomeProps) {
             </p>
           </form>
         </div>
+      </section>
+
+      {/* Sección de Instagram: widget de Elfsight, igual que en la principal en inglés */}
+      <section className="mx-auto mt-24 max-w-6xl text-center">
+        <h2 className="text-3xl font-bold text-[#1f2a1f] md:text-4xl">
+          Publicaciones recientes
+        </h2>
+
+        <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-[#4b5a4b]">
+          Síguenos en Instagram para más contenido de huerto, lombricultura y
+          acuaponía.
+        </p>
+
+        <div className="mt-10">
+          <div
+            className="elfsight-app-9c15b5ae-f9cc-4986-acd6-adcf543d3653"
+            data-elfsight-app-lazy=""
+          ></div>
+        </div>
+
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <a
+            href="https://www.instagram.com/kcgreenworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-xl border border-green-800 px-6 py-3 font-semibold text-green-900 transition hover:bg-green-800 hover:text-white"
+          >
+            Ver publicaciones en Instagram
+          </a>
+          <a
+            href="https://www.tiktok.com/@kcgreenworks"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex rounded-xl bg-green-800 px-6 py-3 font-semibold text-white transition hover:bg-green-900"
+          >
+            Ver TikTok
+          </a>
+        </div>
+
+        <Script
+          src="https://elfsightcdn.com/platform.js"
+          strategy="lazyOnload"
+        />
       </section>
     </main>
   );

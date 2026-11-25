@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
 import Link from "next/link"; // Importamos Link para la navegación rápida de Next.js
+import VideosSection from "@/components/VideosSection";
 
 const pageTitle = "Home Gardening, Vermicomposting & Aquaponics | KCGreenWorks";
 const pageDescription =
@@ -168,6 +169,9 @@ export default async function HomeEN({ searchParams }: HomeENProps) {
           </form>
         </div>
       </section>
+
+      {/* Sección de videos de YouTube: la misma automática de la principal en español */}
+      <VideosSection locale="en" />
 
       <section className="mx-auto mt-24 max-w-6xl text-center">
         <h2 className="text-3xl font-bold text-[#1f2a1f] md:text-4xl">
